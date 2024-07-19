@@ -20,6 +20,7 @@ toggle.onclick = function () {
 };
 
 // Mengubah konten website sesuai sidebar
+const linkHome = document.getElementById("home-peserta");
 const linkDataTim = document.getElementById("data-tim");
 const linkKegiatanLomba = document.getElementById("kegiatan-lomba");
 const linkStatusKarya = document.getElementById("status-karya");
@@ -35,6 +36,7 @@ function showHomeDashboard() {
   linkStatusKarya.classList.remove("active");
   linkGantiSandi.classList.remove("active");
   linkKegiatanLomba.classList.remove("active");
+  linkHome.classList.add("active");
 
   kontenGantiSandi.style.display = "none";
   kontenDataTim.style.display = "none";
@@ -44,6 +46,7 @@ function showHomeDashboard() {
 }
 
 function showKegiatanLomba() {
+  linkHome.classList.remove("active");
   linkDataTim.classList.remove("active");
   linkStatusKarya.classList.remove("active");
   linkGantiSandi.classList.remove("active");
@@ -57,6 +60,7 @@ function showKegiatanLomba() {
 }
 
 function showGantiSandi() {
+  linkHome.classList.remove("active");
   linkDataTim.classList.remove("active");
   linkStatusKarya.classList.remove("active");
   linkKegiatanLomba.classList.remove("active");
@@ -70,6 +74,7 @@ function showGantiSandi() {
 }
 
 function showDataTim() {
+  linkHome.classList.remove("active");
   linkStatusKarya.classList.remove("active");
   linkKegiatanLomba.classList.remove("active");
   linkGantiSandi.classList.remove("active");
@@ -81,6 +86,9 @@ function showDataTim() {
 
   kontenDataTim.style.display = "flex";
 }
+
+// Menampilkan Home Dashboard
+showHomeDashboard();
 
 // Mengatur isi form sesuai dropdown
 const lombaDropdown = document.getElementById("lomba");
