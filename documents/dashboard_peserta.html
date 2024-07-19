@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/styledashboard.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="navigation">
+            <ul>
+                <li id="home-peserta" onclick="showHomeDashboard(); return false;">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="accessibility-outline"></ion-icon>
+                        </span>
+                        <span class="title">Akronim</span>
+                    </a>
+                </li>
+
+                <li id="data-tim" onclick="showDataTim(); return false;">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Data Tim</span>
+                    </a>
+                </li>
+
+                <li id="kegiatan-lomba" onclick="showKegiatanLomba(); return false;">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="medal-outline"></ion-icon>
+                        </span>
+                        <span class="title">Kegiatan Lomba</span>
+                    </a>
+                </li>
+
+                <li id="status-karya">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Status Karya</span>
+                    </a>
+                </li>
+
+                <li id="ganti-sandi" onclick="showGantiSandi(); return false;">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="key-outline"></ion-icon>
+                        </span>
+                        <span class="title">Ganti Kata Sandi</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Keluar</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="user">
+                    <img src="../assets/iky.png" alt="">
+                </div>
+            </div>
+
+            <div class="gambar" id="gambar">
+                <img src="../assets/gunung-batur.jpg" alt="">
+                <h2 style="margin-top: 1rem; text-align: center;">Selamat datang Rakha pada Sistem Informasi .....</h2>
+            </div>
+
+            <div class="submission-data-tim" id="submission-data-tim">
+                <div class="container_form">
+                    <a href="#" class="back-link"></ion-icon>Kembali</a>
+                    <div class="header_form">
+                        <h1>Data Tim</h1>
+                    </div>
+                    <div class="content">
+                        <form action="submit.php" method="post" enctype="multipart/form-data">
+                            <label for="nama_tim">Nama Tim</label>
+                            <input type="text" id="nama_tim" name="nama_tim" placeholder="Nama Tim" required>
+            
+                            <label for="nama_ketua">Nama Ketua Tim</label>
+                            <input type="text" id="nama_ketua" name="nama_ketua" placeholder="Nama Ketua Tim" required>
+            
+                            <label for="nik">NIK Ketua Tim</label>
+                            <input type="text" id="nik" name="nik" placeholder="Nik Ketua Tim" required>
+            
+                            <label for="email">Email Ketua Tim</label>
+                            <input type="email" id="email" name="email" placeholder="Email Ketua Tim" required>
+            
+                            <label for="no_telp">No.Telp Ketua Tim</label>
+                            <input type="tel" id="no_telp" name="no_telp" placeholder="No.Telp Ketua Tim" required>
+                            
+                            <label for="ikut_lomba">Lomba yang diikuti</label>
+                            <input type="text" id="ikut_lomba" name="ikut_lomba" placeholder="Lomba yang diikuti" required>
+                            
+                            <button type="submit">SIMPAN</button>
+                        </form>
+                    </div>        
+                </div>
+            </div> 
+
+            <div class="submission-lomba" id="submission-lomba">
+                <div class="container_form">
+                    <a href="#" class="back-link"></ion-icon>Kembali</a>
+                    <div class="header_form">
+                        <h1>Kegiatan Lomba</h1>
+                        <div class="dropdown">
+                            <label for="lomba">Lomba Yang Diikuti</label>
+                            <select id="lomba" name="lomba">
+                                <option value="">Pilih Lomba</option>
+                                <option value="animasi">Animasi</option>
+                                <option value="game">Game</option>
+                                <option value="website">Website</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="deskripsi">
+                        <h2>Hasil Karya</h2>
+                    </div>
+                    <div class="content-website">
+                        <form action="submit.php" method="post" enctype="multipart/form-data">
+                            <label for="judul">Judul/Nama Karya</label>
+                            <input type="text" id="judul" name="judul" placeholder="Judul/Nama Karya" required>
+                            
+                            <label for="wireframe">Wireframe (link)</label>
+                            <input type="url" id="wireframe" name="wireframe" placeholder="Wireframe (link)" required>
+                            
+                            <label for="uiux">UI/UX (link)</label>
+                            <input type="url" id="uiux" name="uiux" placeholder="UI/UX (link)" required>
+                            
+                            <label for="project_file">File Project (rar/zip)</label>
+                            <input type="url" id="project_file" name="project_file" placeholder="Masukkan Link File Project (GDrive)" required>
+                            
+                            <label for="screenshot">Screenshot Halaman Website</label>
+                            <input type="file" id="screenshot" name="screenshot" placeholder="Screenshot Halaman Website" required>
+                            
+                            <label for="deskripsi">Deskripsi Project</label>
+                            <textarea id="deskripsi" name="deskripsi" placeholder="Deskripsi Project" rows="4" required></textarea>
+                            
+                            <button type="submit">KIRIM</button>
+                        </form>
+                    </div>
+                    <div class="content-game">
+                        <form action="submit.php" method="post" enctype="multipart/form-data">
+                            <label for="judul">Judul/Nama Karya</label>
+                            <input type="text" id="judul" name="judul" placeholder="Judul/Nama Karya" required>
+                            
+                            <label for="gdd">Game Design Document (pdf)</label>
+                            <input type="file" id="gdd" name="gdd" placeholder="Game Design Document (pdf)" required>
+                            
+                            <label for="executable_file">File Executable (rar/zip)</label>
+                            <input type="url" id="executable_file" name="executable_file" placeholder="Masukkan Link File Executable (GDrive)" required>
+                            
+                            <label for="trailer">Trailer Gameplay (mp4)</label>
+                            <input type="url" id="trailer" name="trailer" placeholder="Masukkan Link Trailer Gameplay (GDrive)" required>
+            
+                            <label for="source_code">Source Code (rar/zip)</label>
+                            <input type="url" id="source_code" name="source_code" placeholder="Masukkan Link Source Code (GDrive)" required>
+                            
+                            <label for="deskripsi">Deskripsi Project</label>
+                            <textarea id="deskripsi" name="deskripsi" placeholder="Deskripsi Project" rows="4" required></textarea>
+                            
+                            <button type="submit">KIRIM</button>
+                        </form>
+                    </div>
+                    <div class="content-animasi">
+                        <form action="submit.php" method="post" enctype="multipart/form-data">
+                            <label for="judul">Judul/Nama Karya</label>
+                            <input type="text" id="judul" name="judul" placeholder="Judul/Nama Karya" required>
+                            
+                            <label for="storyboard">Storyboard (pdf)</label>
+                            <input type="file" id="storyboard" name="storyboard" placeholder="Storyboard (pdf)" required>
+                            
+                            <label for="script">Script (pdf)</label>
+                            <input type="file" id="script" name="script" placeholder="Script (pdf)" required>
+                            
+                            <label for="project_file">File Project (rar/zip)</label>
+                            <input type="url" id="project_file" name="project_file" placeholder="Masukkan Link File Project (GDrive)" required>
+            
+                            <label for="hasil_render">Hasil Render (mp4)</label>
+                            <input type="url" id="hasil_render" name="hasil_render" placeholder="Masukkan Link Video Hasil Render" required>
+                            
+                            <label for="deskripsi">Deskripsi Project</label>
+                            <textarea id="deskripsi" name="deskripsi" placeholder="Deskripsi Project" rows="4" required></textarea>
+                            
+                            <button type="submit">KIRIM</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submission-sandi" id="submission-sandi">
+                <div class="container_form">
+                    <a href="#" class="back-link"></ion-icon>Kembali</a>
+                    <div class="header_form">
+                        <h1>Ganti Kata Sandi</h1>
+                    </div>
+                    <div class="content">
+                        <form action="submit.php" method="post" enctype="multipart/form-data">
+                            <label for="password_lama">Password Lama:</label>
+                            <input type="text" id="password_lama" name="password_lama" placeholder="Masukkan Password Lama" required>
+                                        
+                            <label for="password_baru">Password Baru:</label>
+                            <input type="text" id="password_baru" name="password_baru" placeholder="Masukkan Password Baru" required>
+            
+                            <label for="konfirmasi_password_baru">Konfirmasi Password Baru:</label>
+                            <input type="text" id="konfirmasi_password_baru" name="konfirmasi_password_baru" placeholder="Konfirmasi Password Baru" required>
+                                        
+                            <button type="submit">GANTI</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="../js/script.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
