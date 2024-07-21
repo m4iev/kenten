@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../styles/styledashboard.css">
+    <link rel="stylesheet" href="../../styles/styledashboard.css">
 </head>
 
 <body>
@@ -15,8 +15,8 @@
         <!-- Sidebar -->
         <div class="navigation">
             <ul>
-                <li id="home-peserta" onclick="showHomeDashboard(); return false;">
-                    <a href="#">
+                <li id="home-peserta">
+                    <a href="./dashboard_peserta.html">
                         <span class="icon">
                             <ion-icon name="accessibility-outline"></ion-icon>
                         </span>
@@ -24,8 +24,8 @@
                     </a>
                 </li>
 
-                <li id="data-tim" onclick="showDataTim(); return false;">
-                    <a href="#">
+                <li id="data-tim">
+                    <a href="./peserta_datatim.html">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
@@ -33,7 +33,7 @@
                     </a>
                 </li>
 
-                <li id="kegiatan-lomba" onclick="showKegiatanLomba(); return false;">
+                <li id="kegiatan-lomba" class="active">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="medal-outline"></ion-icon>
@@ -51,8 +51,8 @@
                     </a>
                 </li>
 
-                <li id="ganti-sandi" onclick="showGantiSandi(); return false;">
-                    <a href="#">
+                <li id="ganti-sandi">
+                    <a href="./peserta_gantisandi.html">
                         <span class="icon">
                             <ion-icon name="key-outline"></ion-icon>
                         </span>
@@ -79,78 +79,13 @@
                 </div>
 
                 <div class="user">
-                    <img src="../assets/iky.png" alt="">
+                    <img src="../../assets/iky.png" alt="">
                 </div>
             </div>
-
-            <div class="home" id="home">
-                <img src="../assets/gunung-batur.jpg" alt="">
-                <h2 style="margin-top: 1rem; text-align: center;">Selamat datang Rakha pada Sistem Informasi .....</h2>
-                <div class="card-container">
-                    <div class="card-box">
-                        <div class="card-item">
-                            <a href="#" class="card-item-link" onclick="showDataTim(); return false;">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Data Tim
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card-item">
-                            <a href="#" class="card-item-link" onclick="showKegiatanLomba(); return false;">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Kegiatan Lomba
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card-item">
-                            <a href="#" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Status Karya
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="submission-data-tim" id="submission-data-tim">
-                <div class="container_form">
-                    <a href="#" class="back-link"></ion-icon>Kembali</a>
-                    <div class="header_form">
-                        <h1>Data Tim</h1>
-                    </div>
-                    <div class="content">
-                        <form action="submit.php" method="post" enctype="multipart/form-data">
-                            <label for="nama_tim">Nama Tim</label>
-                            <input type="text" id="nama_tim" name="nama_tim" placeholder="Nama Tim" required>
-            
-                            <label for="nama_ketua">Nama Ketua Tim</label>
-                            <input type="text" id="nama_ketua" name="nama_ketua" placeholder="Nama Ketua Tim" required>
-            
-                            <label for="nik">NIK Ketua Tim</label>
-                            <input type="text" id="nik" name="nik" placeholder="Nik Ketua Tim" required>
-            
-                            <label for="no_telp">No.Telp Ketua Tim</label>
-                            <input type="tel" id="no_telp" name="no_telp" placeholder="No.Telp Ketua Tim" required>
-                            
-                            <label for="ikut_lomba">Lomba yang diikuti</label>
-                            <input type="text" id="ikut_lomba" name="ikut_lomba" placeholder="Lomba yang diikuti" required>
-                            
-                            <button type="submit">SIMPAN</button>
-                        </form>
-                    </div>        
-                </div>
-            </div> 
 
             <div class="submission-lomba" id="submission-lomba">
                 <div class="container_form">
-                    <a href="#" class="back-link"></ion-icon>Kembali</a>
+                    <a href="./dashboard_peserta.html" class="back-link"></ion-icon>Kembali</a>
                     <div class="header_form">
                         <h1>Kegiatan Lomba</h1>
                         <div class="dropdown">
@@ -237,34 +172,11 @@
                     </div>
                 </div>
             </div>
-
-            <div class="submission-sandi" id="submission-sandi">
-                <div class="container_form">
-                    <a href="#" class="back-link"></ion-icon>Kembali</a>
-                    <div class="header_form">
-                        <h1>Ganti Kata Sandi</h1>
-                    </div>
-                    <div class="content">
-                        <form action="submit.php" method="post" enctype="multipart/form-data">
-                            <label for="password_lama">Password Lama:</label>
-                            <input type="text" id="password_lama" name="password_lama" placeholder="Masukkan Password Lama" required>
-                                        
-                            <label for="password_baru">Password Baru:</label>
-                            <input type="text" id="password_baru" name="password_baru" placeholder="Masukkan Password Baru" required>
-            
-                            <label for="konfirmasi_password_baru">Konfirmasi Password Baru:</label>
-                            <input type="text" id="konfirmasi_password_baru" name="konfirmasi_password_baru" placeholder="Konfirmasi Password Baru" required>
-                                        
-                            <button type="submit">GANTI</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
     <!-- =========== Scripts =========  -->
-    <script src="../js/script.js"></script>
+    <script src="../../js/script.js"></script>
 
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
