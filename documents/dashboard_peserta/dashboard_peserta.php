@@ -15,7 +15,7 @@
         <!-- Sidebar -->
         <div class="navigation">
             <ul>
-                <li id="home-admin" class="active">
+                <li id="home-peserta" class="active">
                     <a href="#">
                         <span class="icon">
                             <ion-icon name="accessibility-outline"></ion-icon>
@@ -24,8 +24,17 @@
                     </a>
                 </li>
 
-                <li id="kegiatan-lomba-admin">
-                    <a href="./admin_kegiatanlomba.php">
+                <li id="data-tim">
+                    <a href="./peserta_datatim.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Data Tim</span>
+                    </a>
+                </li>
+
+                <li id="kegiatan-lomba">
+                    <a href="./peserta_kegiatanlomba.html">
                         <span class="icon">
                             <ion-icon name="medal-outline"></ion-icon>
                         </span>
@@ -33,17 +42,17 @@
                     </a>
                 </li>
 
-                <li id="data-tim-admin">
+                <li id="status-karya">
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="people-outline"></ion-icon>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </span>
-                        <span class="title">Data Tim Peserta</span>
+                        <span class="title">Status Karya</span>
                     </a>
                 </li>
 
-                <li id="ganti-sandi-admin">
-                    <a href="./admin_gantisandi.html">
+                <li id="ganti-sandi">
+                    <a href="./peserta_gantisandi.html">
                         <span class="icon">
                             <ion-icon name="key-outline"></ion-icon>
                         </span>
@@ -52,7 +61,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../login.html" onclick="return confirm('Apakah kamu yakin ingin keluar?')">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
@@ -75,11 +84,21 @@
             </div>
 
             <div class="home" id="home">
-                <h2 style="margin-top: 1rem; text-align: center;">Selamat datang Admin Faizi pada Sistem Informasi .....</h2>
+                <img src="../../assets/gunung-batur.jpg" alt="">
+                <h2 style="margin-top: 1rem; text-align: center;"><?php include '../../php/show_nama.php'?></h2>
                 <div class="card-container">
                     <div class="card-box">
                         <div class="card-item">
-                            <a href="./admin_kegiatanlomba.php" class="card-item-link">
+                            <a href="./peserta_datatim.html" class="card-item-link">
+                            <div class="card-item-bg">
+                            </div>
+                            <div class="card-item-title">
+                                Data Tim
+                            </div>
+                            </a>
+                        </div>
+                        <div class="card-item">
+                            <a href="./peserta_kegiatanlomba.html" class="card-item-link">
                             <div class="card-item-bg">
                             </div>
                             <div class="card-item-title">
@@ -92,22 +111,13 @@
                             <div class="card-item-bg">
                             </div>
                             <div class="card-item-title">
-                                Data Tim Peserta
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card-item">
-                            <a href="./admin_gantisandi.html" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Ganti Kata Sandi
+                                Status Karya
                             </div>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  
         </div>
     </div>
 

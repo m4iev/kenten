@@ -1,24 +1,34 @@
 <?php
+
+$db = new mysqli('localhost', 'admin', 'inovasipalembang2024', 'akronim');
+
+if ($db->connect_error) {
+    die('Connection failed: ' . $db->connect_error);
+}
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $fullname = $_POST['fullname'];
+    $nama = $_POST['nama'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
-    $recaptcha_response = $_POST['g-recaptcha-response'];
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    $tipeAkun = "peserta";
 
-    $secret_key = '6LdOzBEqAAAAABx46CEcXTtF_QEICTxix52V1zrG';
-
-    // Verifikasi reCAPTCHA
-    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret_key&response=$recaptcha_response");
-    $responseKeys = json_decode($response, true);
-
-    if ($responseKeys["success"]) {
-        // reCAPTCHA berhasil diverifikasi
-        // Lanjutkan dengan pemrosesan pendaftaran pengguna
-        echo "Registrasi berhasil.";
+    if ($password != $confirm_password) {
+        header("Location: ../documents/register.html");
+        echo "<script>alert('Password anda tidak sama.');</script>";
     } else {
-        // reCAPTCHA gagal diverifikasi
-        echo "Verifikasi reCAPTCHA gagal. Silakan coba lagi.";
+        $sql = "INSERT INTO akun (email, password, nama, tipe_akun) VALUES (?, ?, ?, ?)";
+        $stmt = $db->prepare($sql);
+        $stmt->bind_param('ssss', $email, $hashedPassword, $nama, $tipeAkun);
+
+        if ($stmt->execute()) {
+            echo "<p>Akun berhasil dibuat!</p>";
+        } else {
+            echo "<p>Error: " . $db->error . "</p>";
+        }
+    
+        $stmt->close();
+        $db->close();
     }
 }
 ?>

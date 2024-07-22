@@ -15,8 +15,8 @@
         <!-- Sidebar -->
         <div class="navigation">
             <ul>
-                <li id="home-admin" class="active">
-                    <a href="#">
+                <li id="home-admin">
+                    <a href="./dashboard_admin.html">
                         <span class="icon">
                             <ion-icon name="accessibility-outline"></ion-icon>
                         </span>
@@ -24,8 +24,8 @@
                     </a>
                 </li>
 
-                <li id="kegiatan-lomba-admin">
-                    <a href="./admin_kegiatanlomba.php">
+                <li id="kegiatan-lomba-admin" class="active">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="medal-outline"></ion-icon>
                         </span>
@@ -74,39 +74,12 @@
                 </div>
             </div>
 
-            <div class="home" id="home">
-                <h2 style="margin-top: 1rem; text-align: center;">Selamat datang Admin Faizi pada Sistem Informasi .....</h2>
-                <div class="card-container">
-                    <div class="card-box">
-                        <div class="card-item">
-                            <a href="./admin_kegiatanlomba.php" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Kegiatan Lomba
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card-item">
-                            <a href="#" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Data Tim Peserta
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card-item">
-                            <a href="./admin_gantisandi.html" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Ganti Kata Sandi
-                            </div>
-                            </a>
-                        </div>
-                    </div>
+            <div class="tabel">
+                <a href="./dashboard_admin.html" class="back-link"></ion-icon>Kembali</a>
+                <div class="header_form">
+                    <h1>Kegiatan Lomba</h1>
                 </div>
+                <?php include '../../php/show_kegiatanlomba.php' ?>
             </div>
         </div>
     </div>

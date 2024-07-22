@@ -52,7 +52,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../login.html" onclick="return confirm('Apakah kamu yakin ingin keluar?')">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
@@ -75,7 +75,7 @@
             </div>
 
             <div class="home" id="home">
-                <h2 style="margin-top: 1rem; text-align: center;">Selamat datang Admin Faizi pada Sistem Informasi .....</h2>
+                <h2 style="margin-top: 1rem; text-align: center;"></h2>
                 <div class="card-container">
                     <div class="card-box">
                         <div class="card-item">
