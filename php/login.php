@@ -27,10 +27,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['nama'] = $row['nama'];
             
             if ($row['tipe_akun'] == 'peserta') {
-                header('Location: ../documents/dashboard_peserta/dashboard_peserta.html');
+                header('Location: ../documents/dashboard_peserta/dashboard_peserta.php');
                 exit;
             } else if ($row['tipe_akun'] == 'admin') {
-                header('Location: ../documents/dashboard_admin/dashboard_admin.html');
+                header('Location: ../documents/dashboard_admin/dashboard_admin.php');
                 exit;
             } else {
                 echo "<p>Ada masalah dengan akun.</p>";

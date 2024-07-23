@@ -300,6 +300,7 @@ form input[type="url"],
 form input[type="file"],
 form input[type="email"],
 form input[type="tel"],
+form input[type="password"],
 form textarea {
   width: 50%;
   padding: 10px;

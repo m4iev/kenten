@@ -75,7 +75,7 @@
             </div>
 
             <div class="home" id="home">
-                <h2 style="margin-top: 1rem; text-align: center;"></h2>
+                <h2 style="margin-top: 1rem; text-align: center;"><?php include '../../php/show_nama.php' ?></h2>
                 <div class="card-container">
                     <div class="card-box">
                         <div class="card-item">

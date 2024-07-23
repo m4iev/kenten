@@ -16,7 +16,7 @@
         <div class="navigation">
             <ul>
                 <li id="home-peserta">
-                    <a href="./dashboard_peserta.html">
+                    <a href="./dashboard_peserta.php">
                         <span class="icon">
                             <ion-icon name="accessibility-outline"></ion-icon>
                         </span>
@@ -61,7 +61,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../login.html" onclick="return confirm('Apakah kamu yakin ingin keluar?')">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
@@ -86,20 +86,20 @@
 
             <div class="submission-sandi" id="submission-sandi">
                 <div class="container_form">
-                    <a href="./dashboard_peserta.html" class="back-link"></ion-icon>Kembali</a>
+                    <a href="./dashboard_peserta.php" class="back-link"></ion-icon>Kembali</a>
                     <div class="header_form">
                         <h1>Ganti Kata Sandi</h1>
                     </div>
                     <div class="content">
-                        <form action="submit.php" method="post" enctype="multipart/form-data">
+                        <form action="../../php/gantisandi.php" method="post" enctype="multipart/form-data">
                             <label for="password_lama">Password Lama:</label>
-                            <input type="text" id="password_lama" name="password_lama" placeholder="Masukkan Password Lama" required>
+                            <input type="password" id="password_lama" name="password_lama" placeholder="Masukkan Password Lama" required>
                                         
                             <label for="password_baru">Password Baru:</label>
-                            <input type="text" id="password_baru" name="password_baru" placeholder="Masukkan Password Baru" required>
+                            <input type="password" id="password_baru" name="password_baru" placeholder="Masukkan Password Baru" required>
             
                             <label for="konfirmasi_password_baru">Konfirmasi Password Baru:</label>
-                            <input type="text" id="konfirmasi_password_baru" name="konfirmasi_password_baru" placeholder="Konfirmasi Password Baru" required>
+                            <input type="password" id="konfirmasi_password_baru" name="konfirmasi_password_baru" placeholder="Konfirmasi Password Baru" required>
                                         
                             <button type="submit">GANTI</button>
                         </form>

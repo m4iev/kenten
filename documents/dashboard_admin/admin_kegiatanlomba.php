@@ -16,7 +16,7 @@
         <div class="navigation">
             <ul>
                 <li id="home-admin">
-                    <a href="./dashboard_admin.html">
+                    <a href="./dashboard_admin.php">
                         <span class="icon">
                             <ion-icon name="accessibility-outline"></ion-icon>
                         </span>
@@ -52,7 +52,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="../login.html" onclick="return confirm('Apakah kamu yakin ingin keluar?')">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
@@ -75,7 +75,7 @@
             </div>
 
             <div class="tabel">
-                <a href="./dashboard_admin.html" class="back-link"></ion-icon>Kembali</a>
+                <a href="./dashboard_admin.php" class="back-link"></ion-icon>Kembali</a>
                 <div class="header_form">
                     <h1>Kegiatan Lomba</h1>
                 </div>
