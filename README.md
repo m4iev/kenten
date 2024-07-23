@@ -32,3 +32,8 @@ CHANGELOG 22/7/2024
 - Fitur Login dan Register sudah berfungsi
 - Tombol keluar pada dashboard sudah berfungsi
 - Ucapan selamat datang sudah diatur sesuai akun yang login
+
+CHANGELOG 23/7/2024
+- Fitur ganti sandi sudah berjalan
+- Tambah Skeleton Homepage
+- Tambah kerangka status karya
