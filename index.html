@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <a href="#home" class="nav-link"><i class="ri-home-2-line"></i></a>
+            <a href="#sambutan" class="nav-link">Sambutan</a>
+            <a href="#timeline" class="nav-link">Timeline</a>
+            <a href="#lomba" class="nav-link">Lomba</a>
+            <a href="#pengumuman" class="nav-link">Pengumuman</a>
+        </nav>
+        <a href="documents/login.html" class="login">Login</a>
+    </header>
+
+    <section id="home" class="section-home">
+        <div class="content">
+            <div class="description">
+                <h2 class="oval-shape">Deskripsi singkat lomba</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget neque vitae libero convallis dictum. Quisque ipsum lorem, fringilla nec pretium ut, bibendum sed nisi.</p>
+                <h3 class="oval-shape">Waktu Pendaftaran 1 - 31 Juli</h3>
+                <div id="timer" class="timer">
+                    <div id="days" class="timer-box">00<br><span>HARI</span></div>
+                    <div id=":" class="timer-box1">:<br><span></span></div>
+                    <div id="hours" class="timer-box">00<br><span>JAM</span></div>
+                    <div id=":" class="timer-box1">:<br><span></span></div>
+                    <div id="minutes" class="timer-box">00<br><span>MENIT</span></div>
+                    <div id=":" class="timer-box1">:<br><span></span></div>
+                    <div id="seconds" class="timer-box">00<br><span>DETIK</span></div>
+                </div>
+            </div>
+            <div class="image-placeholder"></div>
+        </div>
+    </section>
+
+    <section id="sambutan" class="section-sambutan">
+        <h2 class="oval-shape">Sambutan</h2>
+        <div class="sambutan-content">
+            <div class="video-placeholder">
+                <!-- YouTube embed -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="sambutan-description">
+                <div class="sambutan-header">
+                    <div class="sambutan-logo">
+                        <img src="logo.png" alt="Logo">
+                    </div>
+                    <h3>Sambutan Walikota Palembang</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget neque vitae libero convallis dictum. Quisque ipsum lorem, fringilla nec pretium ut, bibendum sed nisi. Donec nunc turpis, scelerisque sed venenatis eget, facilisis eu orci. Donec non accumsan ligula. Praesent tincidunt sit amet justo in malesuada. Proin lacinia, libero tincidunt elit iaculis, et placerat nunc ullamcorper. Sed lobortis, purus ut tincidunt gravida, diam diam lobortis risus, quis vestibulum nulla dolor quis arcu.</p>
+                <button class="selengkapnya-button">SELENGKAPNYA</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section-timeline">
+        <h2 class="oval-shape">Timeline</h2>
+        <div class="timeline-content">
+            <div class="timeline-item">
+                <div class="timeline-date">01 Juli - 31 Juli</div>
+                <div class="timeline-icon">
+                    <i class="ri-pencil-ruler-2-line"></i>
+                </div>
+                <div class="timeline-step">1</div>
+                <p>Pendaftaran dan Pengiriman Karya Desain</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">01 Aug - 31 Aug</div>
+                <div class="timeline-icon">
+                    <i class="ri-file-list-3-line"></i>
+                </div>
+                <div class="timeline-step">2</div>
+                <p>Periode Penilaian Karya</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">01 Sep - 31 Sep</div>
+                <div class="timeline-icon">
+                    <i class="ri-award-line"></i>
+                </div>
+                <div class="timeline-step">3</div>
+                <p>Periode Pengumuman Pemenang</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="lomba" class="section-lomba">
+        <h2 class="oval-shape">Lomba</h2>
+        <div class="lomba-content">
+            <div class="lomba-item">
+                <div class="lomba-inner">
+                    <div class="lomba-front">
+                        <img src="image.png" alt="Pengembangan Aplikasi Game">
+                        <p>Pengembangan Aplikasi Game</p>
+                    </div>
+                    <div class="lomba-back">
+                        <p>Deskripsi singkat tentang Pengembangan Aplikasi Game. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lomba-item">
+                <div class="lomba-inner">
+                    <div class="lomba-front">
+                        <img src="image.png" alt="Animasi">
+                        <p>Animasi</p>
+                    </div>
+                    <div class="lomba-back">
+                        <p>Deskripsi singkat tentang Animasi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lomba-item">
+                <div class="lomba-inner">
+                    <div class="lomba-front">
+                        <img src="image.png" alt="Sistem Informasi">
+                        <p>Sistem Informasi</p>
+                    </div>
+                    <div class="lomba-back">
+                        <p>Deskripsi singkat tentang Sistem Informasi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pengumuman" class="section-pengumuman">
+        <h2 class="oval-shape">Pengumuman</h2>
+        <div class="pengumuman-content">
+            <div class="pengumuman-item">
+                <div class="pengumuman-date">12/07/2024</div>
+                <div class="pengumuman-title">Panduan Teknis</div>
+                <img src="image.png" alt="Panduan Teknis">
+                <p>Panduan Teknis (Juknis).pdf</p>
+                <a href="Panduan_Teknis.pdf" class="download-button" download>Download</a>
+            </div>
+            <div class="pengumuman-item">
+                <div class="pengumuman-date">31/09/2024</div>
+                <div class="pengumuman-title">Pengumuman Finalis</div>
+                <img src="image.png" alt="Pengumuman Finalis">
+                <p>Pengumuman Finalis (Detail).pdf</p>
+                <a href="#" class="detail-button" onclick="showDetail()">Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <footer> 
+        <div class="sosial">
+            <h1>Follow Me</h1>
+            <a href="https://www.instagram.com/alfrdhorzky_/"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.facebook.com/share/vNmAQPKU51F3ZWKc/?mibextid=qi2Omg"><i class="ri-facebook-circle-line"></i></a>
+            <a href="https://wa.me/628117894246/"><i class="ri-whatsapp-line"></i></a>     
+        </div>
+
+        <div class="credit">
+            <a href="#" class="logo"><i class=></i>&nbsp;Wins<span> Entertainment</span>&nbsp;<i class=></i></a>
+        </div>
+
+    </footer>
+    
+    <script>
+        function countdownTimer() {
+            const endDate = new Date('July 31, 2024 23:59:59').getTime();
+            const daysElement = document.getElementById('days');
+            const hoursElement = document.getElementById('hours');
+            const minutesElement = document.getElementById('minutes');
+            const secondsElement = document.getElementById('seconds');
+
+            setInterval(function() {
+                const now = new Date().getTime();
+                const distance = endDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                daysElement.innerHTML = `${days}<br><span>HARI</span>`;
+                hoursElement.innerHTML = `${hours}<br><span>JAM</span>`;
+                minutesElement.innerHTML = `${minutes}<br><span>MENIT</span>`;
+                secondsElement.innerHTML = `${seconds}<br><span>DETIK</span>`;
+
+                if (distance < 0) {
+                    clearInterval(this);
+                    daysElement.innerHTML = '00<br><span>HARI</span>';
+                    hoursElement.innerHTML = '00<br><span>JAM</span>';
+                    minutesElement.innerHTML = '00<br><span>MENIT</span>';
+                    secondsElement.innerHTML = '00<br><span>DETIK</span>';
+                }
+            }, 1000);
+        }
+
+        function setActiveLink() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 60;
+                    if (pageYOffset >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    window.scrollTo({
+                        top: targetElement.offsetTop - document.querySelector('.header').offsetHeight,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        }
+
+        function animateTimelineItems() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            function observerCallback(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    } else {
+                        entry.target.classList.remove('animate');
+                    }
+                });
+            }
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+            timelineItems.forEach(item => observer.observe(item));
+        }
+
+        function initLombaItems() {
+            const lombaItems = document.querySelectorAll('.lomba-item');
+            lombaItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('flipped');
+                });
+            });
+        }
+
+        function showDetail() {
+            alert("Detail Pengumuman Finalis");
+        }
+
+        countdownTimer();
+        setActiveLink();
+        animateTimelineItems();
+        initLombaItems();
+    </script>
+</body>
+</html>

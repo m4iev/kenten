@@ -447,6 +447,40 @@ tr:hover {
   background-color: var(--warna-primary);
 }
 
+/* style status karya */
+.status-karya {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.upload-icon {
+    margin-bottom: 20px;
+}
+
+.upload-icon img {
+    height: 300px;
+    width: 300px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
 /* Media Queries Card Home Dashboard */
 
 @media only screen and (max-width: 979px) {

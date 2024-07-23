@@ -43,7 +43,7 @@
                 </li>
 
                 <li id="status-karya">
-                    <a href="#">
+                    <a href="./peserta_statuskarya.html">
                         <span class="icon">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </span>

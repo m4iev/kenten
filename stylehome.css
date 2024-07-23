@@ -1,0 +1,496 @@
+/* Animations */
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.timeline-item:nth-child(odd).animate {
+  animation: slideFromLeft 0.5s ease-out forwards;
+}
+
+.timeline-item:nth-child(even).animate {
+  animation: slideFromRight 0.5s ease-out forwards;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: maroon;
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: #eeeeee;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 97%;
+  top: 0;
+  z-index: 1000;
+  border-radius: 50px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.navbar {
+  background-color: #79747e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  gap: 20px;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link.active {
+  background-color: white;
+  color: black;
+}
+
+.nav-link:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.login {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.section-home {
+  padding: 80px 20px 50px;
+  text-align: center;
+  background-color: gold;
+}
+
+.section-home h2 {
+  margin-bottom: 20px;
+}
+
+.section-timeline {
+  padding:50px 20px 50px 20px;
+  text-align: center;
+  background-color: gold;
+}
+
+.section-timeline h2 {
+  margin-bottom: 20px;
+}
+
+.section-timeline p {
+  margin-bottom: 20px;
+}
+
+.section-lomba {
+  padding: 50px 20px 50px 20px;
+  text-align: center;
+  background-color: maroon;
+}
+
+.section-lomba h2 {
+  margin-bottom: 20px;
+}
+
+.lomba-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.lomba-item {
+  background-color: #d3d3d3;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.lomba-front:hover{
+  background-color:#79747e;
+}
+
+.lomba-back:hover{
+  background-color:#79747e;
+}
+
+.lomba-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border: 2px solid #000;
+  border-radius: 10px;
+  
+}
+
+.lomba-item.flipped .lomba-inner {
+  transform: rotateY(180deg);
+}
+
+.lomba-front, .lomba-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.lomba-front {
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lomba-back {
+  background-color: #d3d3d3;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lomba-item img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.lomba-item p {
+  font-weight: bold;
+}
+
+.section-pengumuman {
+  padding: 50px 20px 50px 20px;
+  text-align: center;
+  background-color: gold;
+  margin-bottom: 20px;
+}
+
+.section-pengumuman h2 {
+  margin-bottom: 20px;
+}
+
+.section-pengumuman p {
+  margin-bottom: 20px;
+}
+
+.pengumuman-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pengumuman-item {
+  background-color: #d3d3d3;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.pengumuman-item img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.pengumuman-date {
+  background-color: #6c757d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.pengumuman-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.download-button,
+.detail-button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.download-button:hover,
+.detail-button:hover {
+  background-color: #5a6268;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: left;
+  width: 45%;
+  border: 2px solid #000; 
+  border-radius: 10px;
+}
+
+.image-placeholder {
+  width: 45%;
+  height: 200px;
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer-box {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.timer-box1 {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+
+.timer-box span {
+  font-size: 20px;
+}
+
+.section-sambutan {
+  padding: 50px 20px 50px 20px;
+  background-color: maroon;
+  text-align: center;
+}
+
+.sambutan-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /
+}
+
+.sambutan-description {
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+}
+
+.sambutan-header {
+  display: flex;
+  align-items: center;
+}
+
+.sambutan-logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.selengkapnya-button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.selengkapnya-button:hover {
+  background-color: #5a6268;
+}
+
+.timeline-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 20px;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+.timeline-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeline-date {
+  position: static;
+  background-color: #6c757d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.timeline-step {
+  background-color: #6c757d;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.timeline-icon {
+  background-color: #6c757d;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.lomba-content,
+.pengumuman-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+.lomba-item,
+.pengumuman-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+footer {
+  background-color: maroon;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+footer .sosial {
+  padding-bottom: 15px;
+  font-size: 3rem;
+}
+
+footer .sosial h1 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+footer .sosial a {
+  color: #fff;
+  margin: 9px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 1rem;
+}
+
+footer .sosial a:hover {
+  color: var(--clr2);
+  transition: .5s ease;
+  transform: translateY(.2rem);
+}
+
+.oval-shape {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  color: #000;
+}
