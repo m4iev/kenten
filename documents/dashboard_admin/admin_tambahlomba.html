@@ -24,8 +24,8 @@
                     </a>
                 </li>
 
-                <li id="kegiatan-lomba-admin" class="active">
-                    <a href="#">
+                <li id="kegiatan-lomba-admin"  class="active">
+                    <a href="./admin_kegiatanlomba.php">
                         <span class="icon">
                             <ion-icon name="medal-outline"></ion-icon>
                         </span>
@@ -43,7 +43,7 @@
                 </li>
 
                 <li id="ganti-sandi-admin">
-                    <a href="./admin_gantisandi.html">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="key-outline"></ion-icon>
                         </span>
@@ -74,13 +74,32 @@
                 </div>
             </div>
 
-            <div class="tabel">
-                <a href="./dashboard_admin.php" class="back-link"></ion-icon>Kembali</a>
-                <a href="./admin_tambahlomba.html" class="back-link"></ion-icon>Tambah</a>
-                <div class="header_form">
-                    <h1>Kegiatan Lomba</h1>
+            <div class="submission-tambahlomba" id="submission-tambahlomba">
+                <div class="container_form">
+                    <a href="./admin_kegiatanlomba.php" class="back-link"></ion-icon>Kembali</a>
+                    <div class="header_form">
+                        <h1>Tambah Lomba Baru</h1>
+                    </div>
+                    <div class="content">
+                        <form>
+                            <div class="form-group">
+                                <label for="nama-lomba">Nama Lomba</label>
+                                <input type="text" id="nama-lomba" name="nama-lomba">
+                            </div>
+                            <div class="form-group">
+                                <label for="periode-lomba">Periode Lomba</label>
+                                <input type="date" id="periode-mulai" name="periode-mulai">
+                                <span>Sampai</span>
+                                <input type="date" id="periode-selesai" name="periode-selesai">
+                            </div>
+                            <div class="form-group">
+                                <label for="deskripsi-lomba">Deskripsi Lomba</label>
+                                <textarea id="deskripsi-lomba" name="deskripsi-lomba" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">TAMBAH</button>
+                        </form>
+                    </div>
                 </div>
-                <?php include '../../php/show_kegiatanlomba.php' ?>
             </div>
         </div>
     </div>
