@@ -229,6 +229,9 @@
                         top: targetElement.offsetTop - document.querySelector('.header').offsetHeight,
                         behavior: 'smooth'
                     });
+
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
                 });
             });
         }
