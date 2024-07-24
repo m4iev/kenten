@@ -7,6 +7,8 @@ TODO
 * isi detail lomba admin
 * Label form
 * style tombol tambah
+* motif songket?
+* asset2
 
 --Backend--
 * kalo bisa pake google drive API untuk sistem pengumpulan
