@@ -90,22 +90,22 @@
                         <h1>Data Tim</h1>
                     </div>
                     <div class="content">
-                        <form action="submit.php" method="post" enctype="multipart/form-data">
+                        <form action="../../php/data_tim.php" method="post" enctype="multipart/form-data">
                             <label for="nama_tim">Nama Tim</label>
                             <input type="text" id="nama_tim" name="nama_tim" placeholder="Nama Tim" required>
             
                             <label for="nama_ketua">Nama Ketua Tim</label>
                             <input type="text" id="nama_ketua" name="nama_ketua" placeholder="Nama Ketua Tim" required>
             
-                            <label for="nik">NIK Ketua Tim</label>
-                            <input type="text" id="nik" name="nik" placeholder="Nik Ketua Tim" required>
+                            <label for="nik_ketua">NIK Ketua Tim</label>
+                            <input type="text" id="nik_ketua" name="nik_ketua" placeholder="Nik Ketua Tim" required>
             
-                            <label for="no_telp">No.Telp Ketua Tim</label>
-                            <input type="tel" id="no_telp" name="no_telp" placeholder="No.Telp Ketua Tim" required>
+                            <label for="no_telp_ketua">No.Telp Ketua Tim</label>
+                            <input type="tel" id="no_telp_ketua" name="no_telp_ketua" placeholder="No.Telp Ketua Tim" required>
                             
                             <div class="dropdown">
-                                <label for="lomba">Lomba Yang Diikuti</label>
-                                <select id='lomba' name='lomba'>
+                                <label for="lomba_diikuti">Lomba Yang Diikuti</label>
+                                <select id='lomba_diikuti' name='lomba'>
                                     <?php include '../../php/pilih_lomba.php' ?>;
                                 </select>
                             </div>

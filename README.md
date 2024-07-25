@@ -3,8 +3,9 @@ TODO
 --Frontend--
 * data tim peserta -  fitur edit data.
 * data tim admin
-* kegiatan lomba peserta %
+* kegiatan lomba peserta %%
 * isi detail lomba admin
+* Timeline Homepage
 * Label form
 * motif songket?
 * asset2
@@ -47,3 +48,6 @@ CHANGELOG 25/7/2024
 - Ubah peserta_datatim.html ke peserta_datatim.php
 - Ubah hyperlink di berbagai page dari peserta_datatim.html ke peserta_datatim.php
 - text field 'lomba yang diikuti pada bagian datatim - peserta diganti ke dropdown select'
+- Tambah tombol kembali pada page status karya - peserta
+- Buat tabel 'data_tim'
+- Tambah konten page data tim peserta - admin dan disambungkan dengan kode php untuk menampilkan tabel berdasarkan isi dari database

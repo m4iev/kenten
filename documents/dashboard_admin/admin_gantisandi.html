@@ -34,7 +34,7 @@
                 </li>
 
                 <li id="data-tim-admin">
-                    <a href="#">
+                    <a href="./admin_datatim.php">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>

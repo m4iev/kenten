@@ -15,8 +15,8 @@
         <!-- Sidebar -->
         <div class="navigation">
             <ul>
-                <li id="home-admin" class="active">
-                    <a href="#">
+                <li id="home-admin">
+                    <a href="./dashboard_admin.php">
                         <span class="icon">
                             <ion-icon name="accessibility-outline"></ion-icon>
                         </span>
@@ -33,8 +33,8 @@
                     </a>
                 </li>
 
-                <li id="data-tim-admin">
-                    <a href="./admin_datatim.php">
+                <li id="data-tim-admin" class="active">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
@@ -74,39 +74,11 @@
                 </div>
             </div>
 
-            <div class="home" id="home">
-                <h2 style="margin-top: 1rem; text-align: center;"><?php include '../../php/show_nama.php' ?></h2>
-                <div class="card-container">
-                    <div class="card-box">
-                        <div class="card-item">
-                            <a href="./admin_kegiatanlomba.php" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Kegiatan Lomba
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card-item">
-                            <a href="./admin_datatim.php" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Data Tim Peserta
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card-item">
-                            <a href="./admin_gantisandi.html" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Ganti Kata Sandi
-                            </div>
-                            </a>
-                        </div>
-                    </div>
+            <div class="tabel">
+                <div class="header_form">
+                    <h1>Data Tim Peserta</h1>
                 </div>
+                <?php include '../../php/show_tim.php' ?>
             </div>
         </div>
     </div>
