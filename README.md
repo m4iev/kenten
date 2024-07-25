@@ -2,7 +2,6 @@ TODO
 
 --Frontend--
 * data tim peserta -  fitur edit data.
-* data tim admin
 * kegiatan lomba peserta %%
 * isi detail lomba admin
 * Timeline Homepage
