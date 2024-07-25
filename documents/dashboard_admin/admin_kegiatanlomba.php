@@ -76,7 +76,7 @@
 
             <div class="tabel">
                 <a href="./dashboard_admin.php" class="back-link"></ion-icon>Kembali</a>
-                <a href="./admin_tambahlomba.html" class="back-link"></ion-icon>Tambah</a>
+                <a href="./admin_tambahlomba.html" class="tambah-link"></ion-icon>Tambah</a>
                 <div class="header_form">
                     <h1>Kegiatan Lomba</h1>
                 </div>
