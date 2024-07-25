@@ -1,12 +1,11 @@
 TODO
 
 --Frontend--
-* data tim peserta - dropdown select lomba yang diikuti, fitur edit data.
+* data tim peserta -  fitur edit data.
 * data tim admin
 * kegiatan lomba peserta %
 * isi detail lomba admin
 * Label form
-* style tombol tambah
 * motif songket?
 * asset2
 
@@ -42,3 +41,9 @@ CHANGELOG 23/7/2024
 CHANGELOG 24/7/2024
 - Tambah fitur tambah lomba
 - Fix navbar homepage
+
+CHANGELOG 25/7/2024
+- Fitur Tambah lomba sudah berjalan
+- Ubah peserta_datatim.html ke peserta_datatim.php
+- Ubah hyperlink di berbagai page dari peserta_datatim.html ke peserta_datatim.php
+- text field 'lomba yang diikuti pada bagian datatim - peserta diganti ke dropdown select'

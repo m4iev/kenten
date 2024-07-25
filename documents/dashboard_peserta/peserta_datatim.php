@@ -103,8 +103,12 @@
                             <label for="no_telp">No.Telp Ketua Tim</label>
                             <input type="tel" id="no_telp" name="no_telp" placeholder="No.Telp Ketua Tim" required>
                             
-                            <label for="ikut_lomba">Lomba yang diikuti</label>
-                            <input type="text" id="ikut_lomba" name="ikut_lomba" placeholder="Lomba yang diikuti" required>
+                            <div class="dropdown">
+                                <label for="lomba">Lomba Yang Diikuti</label>
+                                <select id='lomba' name='lomba'>
+                                    <?php include '../../php/pilih_lomba.php' ?>;
+                                </select>
+                            </div>
                             
                             <button type="submit">SIMPAN</button>
                         </form>

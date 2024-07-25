@@ -25,7 +25,7 @@
                 </li>
 
                 <li id="data-tim">
-                    <a href="./peserta_datatim.html">
+                    <a href="./peserta_datatim.php">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
@@ -89,7 +89,7 @@
                 <div class="card-container">
                     <div class="card-box">
                         <div class="card-item">
-                            <a href="./peserta_datatim.html" class="card-item-link">
+                            <a href="./peserta_datatim.php" class="card-item-link">
                             <div class="card-item-bg">
                             </div>
                             <div class="card-item-title">
