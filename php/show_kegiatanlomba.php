@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
         echo "<tr>";
         echo "<td>" . ucwords($row['nama_lomba']) . "</td>";
         echo "<td>" . $row['tanggal_mulai'] . " - " . $row['tanggal_berakhir'] . "</td>";
-        echo "<td><button class='btn-selengkapnya'>Selengkapnya</button></td>";
+        echo "<td><a href='./detail_lomba/detail_" . str_replace(' ', '', $row['nama_lomba']) . ".php'><button class='btn-selengkapnya' >Selengkapnya</button></a></td>";
         echo "</tr>";
     }
 

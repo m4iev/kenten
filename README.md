@@ -3,16 +3,15 @@ TODO
 --Frontend--
 * data tim peserta -  fitur edit data.
 * kegiatan lomba peserta %%
-* isi detail lomba admin
 * Timeline Homepage
 * Label form
 * motif songket?
 * asset2
+* MEDIA QUERIES
 
 --Backend--
 * kalo bisa pake google drive API untuk sistem pengumpulan
 * sambung seluruh database ke web
-* db datatim %
 * db peserta tiap lomba %
 
 --MISC--
@@ -50,3 +49,6 @@ CHANGELOG 25/7/2024
 - Tambah tombol kembali pada page status karya - peserta
 - Buat tabel 'data_tim'
 - Tambah konten page data tim peserta - admin dan disambungkan dengan kode php untuk menampilkan tabel berdasarkan isi dari database
+
+CHANGELOG 26/7/2024
+- Tambah konten detail lomba website, animasi, pengembangan game dan fotografi
