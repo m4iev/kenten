@@ -1,18 +1,15 @@
 TODO
 
 --Frontend--
-* data tim peserta -  fitur edit data.
-* kegiatan lomba peserta %%
-* Timeline Homepage
+* Kegiatan lomba peserta 
+* Fix Timeline Homepage
 * Label form
-* motif songket?
-* asset2
+* apply motif songket
+* masukkin asset2
 * MEDIA QUERIES
 
 --Backend--
-* kalo bisa pake google drive API untuk sistem pengumpulan
-* sambung seluruh database ke web
-* db peserta tiap lomba %
+* show tabel peserta tiap lomba (admin)
 
 --MISC--
 
@@ -52,3 +49,8 @@ CHANGELOG 25/7/2024
 
 CHANGELOG 26/7/2024
 - Tambah konten detail lomba website, animasi, pengembangan game dan fotografi
+
+CHANGELOG 27/7/2024
+- Optimisasi data tim peserta
+- Ubah konten data tim peserta dengan mengecek apakah data sudah ada di database. jika sudah ada, tampilkan data dalam bentuk tabel. jika tidak ada, tampilkan form
+- Tambah tabel peserta_website, peserta_animasi dan peserta_game

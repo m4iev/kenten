@@ -17,6 +17,4 @@ if ($result->num_rows > 0) {
 } else {
     echo "<option value=''>Tidak ada data</option>";
 }
-
-$conn->close();
 ?>
