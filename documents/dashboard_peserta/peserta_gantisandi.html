@@ -34,7 +34,7 @@
                 </li>
 
                 <li id="kegiatan-lomba">
-                    <a href="./peserta_kegiatanlomba.html">
+                    <a href="./peserta_kegiatanlomba.php">
                         <span class="icon">
                             <ion-icon name="medal-outline"></ion-icon>
                         </span>
@@ -76,10 +76,6 @@
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
-                </div>
-
-                <div class="user">
-                    <img src="../../assets/iky.png" alt="">
                 </div>
             </div>
 

@@ -20,33 +20,3 @@ function toggleSidebar() {
   navigation.classList.toggle("active");
   dashboard.classList.toggle("active");
 };
-
-// Mengatur isi form sesuai dropdown
-const lombaDropdown = document.getElementById("lomba");
-const websiteContent = document.querySelector(".content-website");
-const gameContent = document.querySelector(".content-game");
-const animationContent = document.querySelector(".content-animasi");
-
-lombaDropdown.addEventListener("change", ubahContentForm);
-
-function ubahContentForm() {
-  const selectedLomba = this.value;
-
-  if (selectedLomba === "website") {
-    websiteContent.style.display = "block";
-    gameContent.style.display = "none";
-    animationContent.style.display = "none";
-  } else if (selectedLomba === "game") {
-    websiteContent.style.display = "none";
-    gameContent.style.display = "block";
-    animationContent.style.display = "none";
-  } else if (selectedLomba === "animasi") {
-    websiteContent.style.display = "none";
-    gameContent.style.display = "none";
-    animationContent.style.display = "block";
-  } else {
-    websiteContent.style.display = "none";
-    gameContent.style.display = "none";
-    animationContent.style.display = "none";
-  }
-}

@@ -68,10 +68,6 @@
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
-
-                <div class="user">
-                    <img src="../../../assets/iky.png" alt="">
-                </div>
             </div>
 
             <div class="container_form">
@@ -111,6 +107,14 @@
                         </ol>
                     </div>
                 </div>
+            </div>
+
+            <div class="header_form">
+                    <h1>Peserta</h1>
+            </div>
+
+            <div class="tabel">
+                <?php include '../../../php/show_pesertagame.php' ?>
             </div>
         </div>
     </div>

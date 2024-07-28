@@ -68,10 +68,6 @@
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
-
-                <div class="user">
-                    <img src="../../assets/iky.png" alt="">
-                </div>
             </div>
 
             <div class="submission-sandi" id="submission-sandi">
@@ -82,13 +78,13 @@
                     </div>
                     <div class="content">
                         <form action="../../php/gantisandi.php" method="post" enctype="multipart/form-data">
-                            <label for="password_lama">Password Lama:</label>
+                            <label for="password_lama" class="label-sandi">Password Lama:</label>
                             <input type="password" id="password_lama" name="password_lama" placeholder="Masukkan Password Lama" required>
                                         
-                            <label for="password_baru">Password Baru:</label>
+                            <label for="password_baru" class="label-sandi">Password Baru:</label>
                             <input type="password" id="password_baru" name="password_baru" placeholder="Masukkan Password Baru" required>
             
-                            <label for="konfirmasi_password_baru">Konfirmasi Password Baru:</label>
+                            <label for="konfirmasi_password_baru" class="label-sandi">Konfirmasi Password Baru:</label>
                             <input type="password" id="konfirmasi_password_baru" name="konfirmasi_password_baru" placeholder="Konfirmasi Password Baru" required>
                                         
                             <button type="submit">GANTI</button>

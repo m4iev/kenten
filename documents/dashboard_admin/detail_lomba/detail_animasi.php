@@ -112,6 +112,14 @@
                     </div>
                 </div>
             </div>
+
+            <div class="header_form">
+                    <h1>Peserta</h1>
+            </div>
+
+            <div class="tabel">
+                <?php include '../../../php/show_pesertaanimasi.php' ?>
+            </div>
         </div>
     </div>
 

@@ -1,15 +1,15 @@
 TODO
 
 --Frontend--
-* Kegiatan lomba peserta 
+* Ubah font
 * Fix Timeline Homepage
-* Label form
-* apply motif songket
 * masukkin asset2
 * MEDIA QUERIES
 
 --Backend--
 * show tabel peserta tiap lomba (admin)
+* fix redirect
+* mobile detect
 
 --MISC--
 
@@ -54,3 +54,9 @@ CHANGELOG 27/7/2024
 - Optimisasi data tim peserta
 - Ubah konten data tim peserta dengan mengecek apakah data sudah ada di database. jika sudah ada, tampilkan data dalam bentuk tabel. jika tidak ada, tampilkan form
 - Tambah tabel peserta_website, peserta_animasi dan peserta_game
+
+CHANGELOG 28/7/2024
+- Ubah posisi label ke tengah
+- Apply background image motif songket
+- Tambah konten kegiatan lomba peserta berdasarkan data yang ada pada database
+- Tambah tabel data peserta pada tiap page detail lomba

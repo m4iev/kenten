@@ -15,8 +15,8 @@
         <!-- Sidebar -->
         <div class="navigation">
             <ul>
-                <li id="home-peserta" class="active">
-                    <a href="#">
+                <li id="home-peserta">
+                    <a href="./dashboard_peserta.php">
                         <span class="icon">
                             <ion-icon name="accessibility-outline"></ion-icon>
                         </span>
@@ -33,8 +33,8 @@
                     </a>
                 </li>
 
-                <li id="kegiatan-lomba">
-                    <a href="./peserta_kegiatanlomba.php">
+                <li id="kegiatan-lomba" class="active">
+                    <a href="#">
                         <span class="icon">
                             <ion-icon name="medal-outline"></ion-icon>
                         </span>
@@ -79,41 +79,15 @@
                 </div>
             </div>
 
-            <div class="home" id="home">
-                <img src="../../assets/gunung-batur.jpg" alt="">
-                <h2 style="margin-top: 1rem; text-align: center;"><?php include '../../php/show_nama.php'?></h2>
-                <div class="card-container">
-                    <div class="card-box">
-                        <div class="card-item">
-                            <a href="./peserta_datatim.php" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Data Tim
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card-item">
-                            <a href="./peserta_kegiatanlomba.php" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Kegiatan Lomba
-                            </div>
-                            </a>
-                        </div>
-                        <div class="card-item">
-                            <a href="#" class="card-item-link">
-                            <div class="card-item-bg">
-                            </div>
-                            <div class="card-item-title">
-                                Status Karya
-                            </div>
-                            </a>
-                        </div>
+            <div class="submission-lomba" id="submission-lomba">
+                <div class="container_form">
+                    <a href="./dashboard_peserta.php" class="back-link"></ion-icon>Kembali</a>
+                    <div class="header_form">
+                        <h1>Kegiatan Lomba</h1>
                     </div>
+                    <?php include '../../php/form_lomba.php' ?>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
 

@@ -116,6 +116,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  background-color: maroon;
+  background-image: url("../assets/bintang.png");
+  background-size: contain;
+  background-repeat: repeat-x;
 }
 
 .toggle {
@@ -127,26 +131,7 @@ body {
   align-items: center;
   font-size: 2.5rem;
   cursor: pointer;
-}
-
-/* Icon User */
-
-.user {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.user img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  color: white;
 }
 
 /* Home Dashboard */
@@ -188,9 +173,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 /* Isi Form */
@@ -217,12 +201,13 @@ body {
   text-align: left;
   font-size: 18px;
   margin-bottom: 10px;
-  color: #007bff;
+  color: maroon;
   text-decoration: none;
+  margin-left: 3px;
 }
 
 .back-link:hover {
-  text-decoration: underline;
+  color: #C5982D;
 }
 
 .header_form {
@@ -272,27 +257,32 @@ body {
 
 .content {
   margin-top: 50px;
+  border-image: url(../assets/bintang.png);
 }
 
 .content-website {
-  display: none;
   text-align: left;
 }
 
 .content-game {
-  display: none;
   text-align: left;
 }
 
 .content-animasi {
-  display: none;
   text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 form label {
   display: block;
   font-size: 14px;
-  margin: 30px 307px 5px;
+  margin: 30px auto 5px;
   text-align: left;
 }
 
@@ -317,14 +307,14 @@ form button {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: green;
+  background-color: maroon;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: var(--warna-primary);
+  background-color: #C5982D;
 }
 
 /* Card Home Dashboard */
@@ -394,7 +384,7 @@ form button:hover {
 .card-item-bg {
   height: 128px;
   width: 128px;
-  background-color: black;
+  background-color: #C5982D;
 
   z-index: 1;
   position: absolute;
@@ -493,7 +483,7 @@ h1 {
   font-size: 16px;
   margin-bottom: 10px;
   display:block;
-  background-color: green;
+  background-color: maroon;
   color: white;
   padding: 8px;
   text-decoration: none;
@@ -503,7 +493,7 @@ h1 {
 }
 
 .tambah-link:hover {
-  background-color: var(--warna-primary);
+  background-color: #C5982D;
 }
 
 .icon-left {
@@ -537,26 +527,32 @@ h1 {
   top: -5px;
   transform: translateY(-50%);
   z-index: 1;
+  background-color: maroon;
 }
 
 .section-content {
-  background-color: #ddd;
+  background-color:#C5982D;
   padding: 30px 20px 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   position: relative;
-  margin-top: 20px;
 }
 
 .section-content p,
 .section-content ol {
   margin: 0;
-  background-color: #eee;
-  padding: 15px;
+  background-color: #C5982D;
+  color: white;
+  opacity: .8;
+  padding: 12px;
   border-radius: 8px;
 }
 
 .section-content ol {
   padding-left: 30px;
+}
+
+.section-content ol li {
+  margin-bottom: 20px;
 }
 
 

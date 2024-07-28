@@ -17,10 +17,13 @@ $lomba_diikuti = $_POST['lomba'];
 
 // Persiapkan query SQL
 $sql = "INSERT INTO data_tim (email, nama_tim, nama_ketua, nik_ketua, no_telp_ketua, lomba_diikuti) 
-        VALUES ('$email_ketua' ,'$nama_tim', '$nama_ketua', '$nik_ketua', '$no_telp_ketua', '$lomba_diikuti')";
+        VALUES ('$email_ketua', '$nama_tim', '$nama_ketua', '$nik_ketua', '$no_telp_ketua', '$lomba_diikuti')";
+
+$sql_peserta = "INSERT INTO peserta_$lomba_diikuti (nama_tim, status_peserta)
+                VALUES ('$nama_tim', 'belum mengumpul')";
 
 // Eksekusi query
-if ($conn->query($sql) === TRUE) {
+if ($conn->query($sql) === TRUE && $conn->query($sql_peserta) === TRUE) {
     echo "Data berhasil disimpan";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
