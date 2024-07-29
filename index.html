@@ -11,7 +11,7 @@
     <div class="wadah-header">
         <header class="header">
             <div class="logo-container">
-                <img src="logo.png" alt="Logo" class="logo">
+                <img src="assets/maskot.png" alt="Logo" class="logo">
             </div>
             <nav class="navbar">
                 <a href="#home" class="nav-link"><i class="ri-home-2-line"></i></a>
@@ -25,7 +25,7 @@
     </div>
 
     <section id="home" class="section-home">
-        <div class="content">
+        <div class="home-content">
             <div class="description">
                 <h2 class="oval-shape">Deskripsi singkat lomba</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget neque vitae libero convallis dictum. Quisque ipsum lorem, fringilla nec pretium ut, bibendum sed nisi.</p>
@@ -40,7 +40,9 @@
                     <div id="seconds" class="timer-box">00<br><span>DETIK</span></div>
                 </div>
             </div>
-            <div class="image-placeholder"></div>
+            <div class="image-placeholder">
+                <img src="assets/maskot.png" alt="Logo" class="image-placeholder">
+            </div>
         </div>
     </section>
 
@@ -54,7 +56,7 @@
             <div class="sambutan-description">
                 <div class="sambutan-header">
                     <div class="sambutan-logo">
-                        <img src="logo.png" alt="Logo">
+                        <img src="assets/logo.png" alt="Logo">
                     </div>
                     <h3>Sambutan Walikota Palembang</h3>
                 </div>
@@ -64,32 +66,27 @@
         </div>
     </section>
 
+    <!-- Integrasi Timeline Section -->
     <section id="timeline" class="section-timeline">
         <h2 class="oval-shape">Timeline</h2>
-        <div class="timeline-content">
-            <div class="timeline-item">
-                <div class="timeline-date">01 Juli - 31 Juli</div>
-                <div class="timeline-icon">
-                    <i class="ri-pencil-ruler-2-line"></i>
+        <div class="timeline">
+            <div class="timeline-container left">
+                <div class="content">
+                    <h2>01 Juli - 31 Juli</h2>
+                    <p>Pendaftaran dan Pengiriman Karya</p>
                 </div>
-                <div class="timeline-step">1</div>
-                <p>Pendaftaran dan Pengiriman Karya Desain</p>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-date">01 Aug - 31 Aug</div>
-                <div class="timeline-icon">
-                    <i class="ri-file-list-3-line"></i>
+            <div class="timeline-container right">
+                <div class="content">
+                    <h2>01 Agustus - 31 Agustus</h2>
+                    <p>Periode Penilaian Karya</p>
                 </div>
-                <div class="timeline-step">2</div>
-                <p>Periode Penilaian Karya</p>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-date">01 Sep - 31 Sep</div>
-                <div class="timeline-icon">
-                    <i class="ri-award-line"></i>
+            <div class="timeline-container left">
+                <div class="content">
+                    <h2>01 September - 31 September</h2>
+                    <p>Periode Pengumuman Pemenang</p>
                 </div>
-                <div class="timeline-step">3</div>
-                <p>Periode Pengumuman Pemenang</p>
             </div>
         </div>
     </section>
@@ -100,7 +97,7 @@
             <div class="lomba-item">
                 <div class="lomba-inner">
                     <div class="lomba-front">
-                        <img src="image.png" alt="Pengembangan Aplikasi Game">
+                        <img src="assets/maskot.png" alt="Pengembangan Aplikasi Game">
                         <p>Pengembangan Aplikasi Game</p>
                     </div>
                     <div class="lomba-back">
@@ -111,7 +108,7 @@
             <div class="lomba-item">
                 <div class="lomba-inner">
                     <div class="lomba-front">
-                        <img src="image.png" alt="Animasi">
+                        <img src="assets/maskot.png" alt="Animasi">
                         <p>Animasi</p>
                     </div>
                     <div class="lomba-back">
@@ -122,7 +119,7 @@
             <div class="lomba-item">
                 <div class="lomba-inner">
                     <div class="lomba-front">
-                        <img src="image.png" alt="Sistem Informasi">
+                        <img src="assets/maskot.png" alt="Sistem Informasi">
                         <p>Sistem Informasi</p>
                     </div>
                     <div class="lomba-back">
@@ -139,14 +136,14 @@
             <div class="pengumuman-item">
                 <div class="pengumuman-date">12/07/2024</div>
                 <div class="pengumuman-title">Panduan Teknis</div>
-                <img src="image.png" alt="Panduan Teknis">
+                <img src="assets/maskot.png" alt="Panduan Teknis">
                 <p>Panduan Teknis (Juknis).pdf</p>
                 <a href="Panduan_Teknis.pdf" class="download-button" download>Download</a>
             </div>
             <div class="pengumuman-item">
                 <div class="pengumuman-date">31/09/2024</div>
                 <div class="pengumuman-title">Pengumuman Finalis</div>
-                <img src="image.png" alt="Pengumuman Finalis">
+                <img src="assets/maskot.png" alt="Pengumuman Finalis">
                 <p>Pengumuman Finalis (Detail).pdf</p>
                 <a href="#" class="detail-button" onclick="showDetail()">Detail</a>
             </div>
@@ -162,121 +159,11 @@
         </div>
 
         <div class="credit">
-            <a href="#" class="logo"><i class=></i>&nbsp;Wins<span> Entertainment</span>&nbsp;<i class=></i></a>
+            <a href="#" class="logo"><i class=></i><span>  SINOPAL</span><i class=></i></a>
         </div>
 
     </footer>
     
-    <script>
-        function countdownTimer() {
-            const endDate = new Date('July 31, 2024 23:59:59').getTime();
-            const daysElement = document.getElementById('days');
-            const hoursElement = document.getElementById('hours');
-            const minutesElement = document.getElementById('minutes');
-            const secondsElement = document.getElementById('seconds');
-
-            setInterval(function() {
-                const now = new Date().getTime();
-                const distance = endDate - now;
-
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                daysElement.innerHTML = `${days}<br><span>HARI</span>`;
-                hoursElement.innerHTML = `${hours}<br><span>JAM</span>`;
-                minutesElement.innerHTML = `${minutes}<br><span>MENIT</span>`;
-                secondsElement.innerHTML = `${seconds}<br><span>DETIK</span>`;
-
-                if (distance < 0) {
-                    clearInterval(this);
-                    daysElement.innerHTML = '00<br><span>HARI</span>';
-                    hoursElement.innerHTML = '00<br><span>JAM</span>';
-                    minutesElement.innerHTML = '00<br><span>MENIT</span>';
-                    secondsElement.innerHTML = '00<br><span>DETIK</span>';
-                }
-            }, 1000);
-        }
-
-        function setActiveLink() {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            window.addEventListener('scroll', () => {
-                let current = '';
-
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop - 60;
-                    if (pageYOffset >= sectionTop) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').substring(1) === current) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-
-                    window.scrollTo({
-                        top: targetElement.offsetTop - document.querySelector('.header').offsetHeight,
-                        behavior: 'smooth'
-                    });
-
-                    navLinks.forEach(link => link.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-        }
-
-        function animateTimelineItems() {
-            const timelineItems = document.querySelectorAll('.timeline-item');
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
-
-            function observerCallback(entries, observer) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                    } else {
-                        entry.target.classList.remove('animate');
-                    }
-                });
-            }
-
-            const observer = new IntersectionObserver(observerCallback, observerOptions);
-            timelineItems.forEach(item => observer.observe(item));
-        }
-
-        function initLombaItems() {
-            const lombaItems = document.querySelectorAll('.lomba-item');
-            lombaItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    this.classList.toggle('flipped');
-                });
-            });
-        }
-
-        function showDetail() {
-            alert("Detail Pengumuman Finalis");
-        }
-
-        countdownTimer();
-        setActiveLink();
-        animateTimelineItems();
-        initLombaItems();
-    </script>
+    <script src="js/scripthome.js"></script>
 </body>
 </html>
