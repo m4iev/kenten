@@ -1,6 +1,7 @@
 TODO
 
 --Frontend--
+* Fix toggle navbar
 * masukkin asset2
 * MEDIA QUERIES HOMEPAGE
 
@@ -56,3 +57,6 @@ CHANGELOG 28/7/2024
 - Apply background image motif songket
 - Tambah konten kegiatan lomba peserta berdasarkan data yang ada pada database
 - Tambah tabel data peserta pada tiap page detail lomba
+
+CHANGELOG 29/7/2024
+- Tambah media queries untuk smartphone dan tablet pada dashboard peserta dan dashboard admin.
