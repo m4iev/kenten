@@ -13,6 +13,10 @@ body {
   background-color: maroon; 
 }
 
+#sidebarToggle {
+  display: none;
+}
+
 .wadah-header {
   display: flex;
   justify-content: center;
@@ -60,17 +64,22 @@ body {
 
 .nav-link.active {
   background-color: maroon;
-  color: black;
+  color: white;
 }
 
 .nav-link:hover {
   background-color: maroon;
-  color: black;
+  color: white;
+}
+
+.login.active {
+  background-color: maroon;
+  color: white;
 }
 
 .login:hover {
   background-color: maroon;
-  color: black;
+  color: white;
 }
 
 .section-home {
@@ -135,6 +144,8 @@ body {
   left: 50%;
 }
 
+
+
 .timeline-container::after {
   content: '';
   position: absolute;
@@ -165,7 +176,7 @@ body {
 
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: #d8d8d8;
   position: relative;
   border-radius: 18px;
   opacity: 0;
@@ -215,10 +226,12 @@ body {
 
 .lomba-front:hover{
   background-color:#79747e;
+  color: white;
 }
 
 .lomba-back:hover{
   background-color:#79747e;
+  color: white;
 }
 
 .lomba-inner {
@@ -246,7 +259,7 @@ body {
 }
 
 .lomba-front {
-  background-color: #d3d3d3;
+  background-color: #d8d8d8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,7 +322,7 @@ body {
 }
 
 .pengumuman-date {
-  background-color: #d3d3d3;
+  background-color: #d8d8d8;
   color: black;
   padding: 5px 10px;
   border-radius: 5px;
@@ -499,6 +512,10 @@ footer .sosial a:hover {
   transform: translateY(.2rem);
 }
 
+footer .credit {
+  color: white;
+}
+
 .oval-shape {
   display: inline-block;
   border-radius: 50px;
@@ -507,4 +524,195 @@ footer .sosial a:hover {
   border: 2px solid #000;
   color: #000;
   box-shadow: 5px 8px black;
+}
+
+.video-placeholder-s {
+  display: none;
+}
+
+.video-placeholder {
+  display: block;
+}
+
+
+/* MEDIA QUARIES */
+@media (max-width: 1024px) {
+  .header {
+    padding: 8px 16px;  
+    align-items: center;
+  }
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .section-home{
+    justify-content: center;
+  }
+  .image-placeholder {
+    display: none;
+  }
+
+  .home-content, .sambutan-content, .timeline, .lomba-content, .pengumuman-content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .timer {
+    justify-content: space-evenly;
+  }
+
+  .description, .sambutan-description {
+    width: 80%;
+  }
+
+  .image-placeholder {
+    width: 80%;
+  }
+
+  .lomba-item img {
+    width: 50%;
+    margin-bottom: 0px;
+  }
+
+  .lomba-item {
+    width: 50%;
+  }
+
+  .pengumuman-item {
+    width: 30%;
+  }
+}
+
+/* Media Query untuk perangkat iPad (max 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 8px 16px;
+    align-items: center;
+  }
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .home-content, .timeline, .pengumuman-content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sambutan-content, .lomba-content {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .description, .sambutan-description {
+    width: 90%;
+  }
+
+  .image-placeholder {
+    width: 90%;
+  }
+
+  .lomba-item img {
+    width: 35%;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  .lomba-item, .pengumuman-item {
+    width: 55%;
+  }
+
+  .timer-box, .timer-box1 {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .timer-box span {
+    font-size: 18px;
+  }
+}
+
+/* Media Query untuk perangkat Ponsel (max 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 8px 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  #sidebarToggle {
+    display: inline-block;
+  }
+
+  .home-content, .sambutan-content, .timeline, .lomba-content, .pengumuman-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description, .sambutan-description {
+    width: 100%;
+  }
+
+  .image-placeholder {
+    width: 100%;
+  }
+
+  .lomba-item img {
+    width: 35%;
+    margin-bottom: 0px;
+    margin-top: 12px;
+  }
+
+  .lomba-item, .pengumuman-item {
+    width: 100%;
+  }
+
+  .timer-box, .timer-box1 {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .timer-box span {
+    font-size: 16px;
+  }
+
+  .video-placeholder {
+    display: none;
+  }
+
+  .video-placeholder-s {
+    display: block;
+  }
+
+  .timeline-container {
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .timeline-container.right {
+    left: 0;
+  }
+
+  .timeline-container.left::after {
+    right: 45%;
+  }
+
+  .timeline-container.left {
+    right: 0;
+  }
+
+  .timeline-container.right::after {
+    left: 45%;
+  }
 }
