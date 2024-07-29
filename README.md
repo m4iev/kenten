@@ -1,15 +1,11 @@
 TODO
 
 --Frontend--
-* Ubah font
-* Fix Timeline Homepage
 * masukkin asset2
-* MEDIA QUERIES
+* MEDIA QUERIES HOMEPAGE
 
 --Backend--
-* show tabel peserta tiap lomba (admin)
 * fix redirect
-* mobile detect
 
 --MISC--
 

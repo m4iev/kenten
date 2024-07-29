@@ -13,7 +13,7 @@
     <div class="container">
 
         <!-- Sidebar -->
-        <div class="navigation">
+        <div class="navigation active">
             <ul>
                 <li id="home-admin" class="active">
                     <a href="#">
@@ -63,7 +63,7 @@
         </div>
 
         <!-- Dashboard -->
-        <div class="dashboard">
+        <div class="dashboard active">
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>

@@ -58,14 +58,15 @@ form button {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: green;
+  background-color: maroon;
   color: #fff;
   font-size: 16px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 form button:hover {
-  background-color: maroon;
+  background-color: #c5982d;
 }
 
 .options {
@@ -81,10 +82,10 @@ form button:hover {
 
 .home-link {
   font-size: 14px;
-  color: #007BFF;
+  color: maroon;
   text-decoration: none;
 }
 
 .home-link:hover {
-  text-decoration: underline;
+  color: #c5982d;
 }

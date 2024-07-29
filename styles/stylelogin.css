@@ -52,13 +52,13 @@ form button {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: green;
+  background-color: maroon;
   color: #fff;
   font-size: 16px;
 }
 
 form button:hover {
-  background-color: maroon;
+  background-color: #c5982d;
 }
 
 .options {
@@ -78,7 +78,7 @@ form button:hover {
 }
 
 .register a {
-  color: #007BFF;
+  color: blue;
   text-decoration: none;
 }
 
@@ -90,11 +90,11 @@ form button:hover {
   display: block;
   margin-top: 20px;
   font-size: 14px;
-  color: #007BFF;
+  color: maroon;
   text-decoration: none;
   text-align: left;
 }
 
 .home-link:hover {
-  text-decoration: underline;
+  color: #c5982d;
 }

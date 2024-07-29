@@ -13,7 +13,7 @@
     <div class="container">
 
         <!-- Sidebar -->
-        <div class="navigation">
+        <div class="navigation active">
             <ul>
                 <li id="home-peserta" class="active">
                     <a href="#">
@@ -43,7 +43,7 @@
                 </li>
 
                 <li id="status-karya">
-                    <a href="./peserta_statuskarya.html">
+                    <a href="./peserta_statuskarya.php">
                         <span class="icon">
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </span>
@@ -72,7 +72,7 @@
         </div>
 
         <!-- Dashboard -->
-        <div class="dashboard">
+        <div class="dashboard active">
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -103,7 +103,7 @@
                             </a>
                         </div>
                         <div class="card-item">
-                            <a href="#" class="card-item-link">
+                            <a href="./peserta_statuskarya.php" class="card-item-link">
                             <div class="card-item-bg">
                             </div>
                             <div class="card-item-title">

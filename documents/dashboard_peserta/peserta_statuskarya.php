@@ -13,7 +13,7 @@
     <div class="container">
 
         <!-- Sidebar -->
-        <div class="navigation">
+        <div class="navigation active">
             <ul>
                 <li id="home-peserta">
                     <a href="./dashboard_peserta.php">
@@ -72,7 +72,7 @@
         </div>
 
         <!-- Dashboard -->
-        <div class="dashboard">
+        <div class="dashboard active">
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>

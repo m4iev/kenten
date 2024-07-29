@@ -13,7 +13,7 @@
     <div class="container">
 
         <!-- Sidebar -->
-        <div class="navigation">
+        <div class="navigation active">
             <ul>
                 <li id="home-admin">
                     <a href="./dashboard_admin.php">
@@ -63,17 +63,21 @@
         </div>
 
         <!-- Dashboard -->
-        <div class="dashboard">
+        <div class="dashboard active">
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
             </div>
 
-            <div class="tabel">
+            <div class="container_form">
+                <a href="./dashboard_admin.php" class="back-link"></ion-icon>Kembali</a>
                 <div class="header_form">
                     <h1>Data Tim Peserta</h1>
                 </div>
+            </div>
+
+            <div class="tabel">
                 <?php include '../../php/show_tim.php' ?>
             </div>
         </div>

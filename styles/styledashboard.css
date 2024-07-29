@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +10,7 @@
 :root {
   --warna-primary: maroon;
   --warna-secondary: white;
+  --warna-gold: #c5982d;
 }
 
 body {
@@ -187,7 +188,7 @@ body {
   text-align: center;
 }
 
-.tabel{
+.tabel {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -207,7 +208,7 @@ body {
 }
 
 .back-link:hover {
-  color: #C5982D;
+  color: var(--warna-gold);
 }
 
 .header_form {
@@ -219,6 +220,7 @@ body {
 .header_form h1 {
   font-size: 20px;
   margin: 0;
+  margin-top: 25px;
 }
 
 .dropdown {
@@ -314,7 +316,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #C5982D;
+  background-color: var(--warna-gold);
 }
 
 /* Card Home Dashboard */
@@ -384,7 +386,7 @@ form button:hover {
 .card-item-bg {
   height: 128px;
   width: 128px;
-  background-color: #C5982D;
+  background-color: var(--warna-gold);
 
   z-index: 1;
   position: absolute;
@@ -428,7 +430,7 @@ tr:hover {
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   transition: background-color 0.3s ease;
   cursor: pointer;
@@ -440,36 +442,36 @@ tr:hover {
 
 /* style status karya */
 .status-karya {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    position: relative;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .upload-icon {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .upload-icon img {
-    height: 300px;
-    width: 300px;
+  height: 300px;
+  width: 300px;
 }
 
 .description {
-    font-size: 14px;
-    color: #555;
-    background-color: #eee;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 0 auto;
-    max-width: 300px;
+  font-size: 14px;
+  color: #555;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 300px;
 }
 
 /* Style Tambah Lomba*/
@@ -482,7 +484,7 @@ h1 {
   text-align: left;
   font-size: 16px;
   margin-bottom: 10px;
-  display:block;
+  display: block;
   background-color: maroon;
   color: white;
   padding: 8px;
@@ -493,7 +495,7 @@ h1 {
 }
 
 .tambah-link:hover {
-  background-color: #C5982D;
+  background-color: var(--warna-gold);
 }
 
 .icon-left {
@@ -531,7 +533,7 @@ h1 {
 }
 
 .section-content {
-  background-color:#C5982D;
+  background-color: var(--warna-gold);
   padding: 30px 20px 20px;
   border-radius: 12px;
   position: relative;
@@ -540,9 +542,9 @@ h1 {
 .section-content p,
 .section-content ol {
   margin: 0;
-  background-color: #C5982D;
+  background-color: var(--warna-gold);
   color: white;
-  opacity: .8;
+  opacity: 0.8;
   padding: 12px;
   border-radius: 8px;
 }
@@ -555,42 +557,8 @@ h1 {
   margin-bottom: 20px;
 }
 
-
-/* Media Queries Card Home Dashboard */
-
-@media only screen and (max-width: 979px) {
-  .card-item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
-  }
-  .card-item-title {
-    font-size: 24px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .card-container {
-    width: 96%;
-  }
-}
-@media only screen and (max-width: 639px) {
-  .card-item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-  }
-  .card-item-title {
-    min-height: 72px;
-    line-height: 1;
-
-    font-size: 24px;
-  }
-  .card-item-link {
-    padding: 22px 40px;
-  }
-}
-
 /* Media Queries */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .navigation {
     left: -300px;
   }
@@ -606,14 +574,57 @@ h1 {
     left: 300px;
   }
   .cardBox {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .card-item-title {
+    font-size: 24px;
+  }
+
+  .tabel {
+    overflow-x: auto;
+  }
+  
+  .content {
+    overflow-x: auto;
+  }
+
+  form input[type="text"],
+  form input[type="url"],
+  form input[type="file"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="password"],
+  form textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    width: 96%;
+  }
+
+  .card-item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .card-item-title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .card-item-link {
+    padding: 22px 40px;
   }
 }
 
 @media (max-width: 480px) {
-  .cardBox {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .cardHeader h2 {
     font-size: 20px;
   }
@@ -637,5 +648,31 @@ h1 {
     position: fixed;
     right: 0;
     left: initial;
+  }
+
+  .tabel {
+    overflow-x: auto;
+  }
+
+  .detail-container {
+    font-size: 16px;
+  }
+
+  form input[type="text"],
+  form input[type="url"],
+  form input[type="file"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="password"],
+  form textarea {
+    width: 100%;
+  }
+
+  .content {
+    overflow-x: auto;
+  }
+
+  .dashboard.active {
+    left: 0;
   }
 }

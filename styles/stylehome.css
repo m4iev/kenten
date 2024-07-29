@@ -20,8 +20,8 @@ body {
 }
 
 .header {
-  background-color: maroon;
-  background-image: url("../assets/bintang.png");
+  background-color: linear-gradient(maroon, yellow);
+  background-image: linear-gradient(to right, maroon, #C5982D);
   background-size: contain;
   padding: 10px 20px;
   display: flex;
@@ -31,6 +31,7 @@ body {
   z-index: 99999;
   border-radius: 0px 0px 50px 50px;
   width: 100%;
+  border: 2px solid black;
 }
 
 .logo {
@@ -50,6 +51,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   background-color: #ffffff;
+  box-shadow: 5px 8px black;
   color: rgb(0, 0, 0);
   padding: 10px 15px;
   border-radius: 20px;
@@ -173,14 +175,13 @@ body {
 
 .content h2 {
   margin-top: 0;
-  border: 1px solid black;
-  background-color: lightgrey;
   border-radius: 10px;
   display: inline-block;
   padding: 10px;
 }
 
 .content.show {
+  box-shadow: 10px 15px black;
   border: 2px solid #000;
   opacity: 1;
   transform: translateY(0);
@@ -345,12 +346,13 @@ body {
 }
 
 .description {
-  background-color: #d3d3d3;
+  background-color: #d8d8d8;
   padding: 20px;
   text-align: left;
   width: 45%;
   border: 2px solid #000;
   border-radius: 10px;
+  box-shadow: 16px 20px black;
 }
 
 .image-placeholder {
@@ -417,6 +419,10 @@ body {
   width: 50%;
   padding: 20px;
   text-align: left;
+  background-color: #d8d8d8;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 16px 20px black;
 }
 
 .sambutan-header {
@@ -458,6 +464,7 @@ body {
   border-radius: 10px;
   text-align: center;
   width: 30%;
+  box-shadow: 10px 15px black;
 }
 
 footer {
@@ -499,4 +506,5 @@ footer .sosial a:hover {
   background-color: #ffffff;
   border: 2px solid #000;
   color: #000;
+  box-shadow: 5px 8px black;
 }
