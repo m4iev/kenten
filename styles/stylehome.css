@@ -20,12 +20,10 @@ body {
 .wadah-header {
   display: flex;
   justify-content: center;
-  
 }
 
 .header {
-  background-color: linear-gradient(maroon, yellow);
-  background-image: linear-gradient(to right, maroon, #C5982D);
+  background-image: linear-gradient(to right, #ffffff, #C5982D, maroon);
   background-size: contain;
   padding: 10px 20px;
   display: flex;
@@ -276,8 +274,9 @@ body {
 }
 
 .lomba-item img {
-  width: 30%;
-  margin-bottom: 10px;
+  width: 29%;
+  margin-top: 12px;
+  margin-bottom: 0px;
 }
 
 .lomba-item p {
@@ -534,6 +533,13 @@ footer .credit {
   display: block;
 }
 
+#menu-button {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+
 
 /* MEDIA QUARIES */
 @media (max-width: 1024px) {
@@ -571,7 +577,8 @@ footer .credit {
   }
 
   .lomba-item img {
-    width: 50%;
+    width: 43%;
+    margin-top: 13px;
     margin-bottom: 0px;
   }
 
@@ -614,9 +621,9 @@ footer .credit {
   }
 
   .lomba-item img {
-    width: 35%;
+    width: 33%;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .lomba-item, .pengumuman-item {
@@ -638,11 +645,16 @@ footer .credit {
 @media (max-width: 480px) {
   .header {
     padding: 8px 16px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
-  .logo-container {
+  .logo {
+    height: 40px;
+    margin-right: 0px;
+  }
+  
+  .login {
     display: none;
   }
 
@@ -668,9 +680,9 @@ footer .credit {
   }
 
   .lomba-item img {
-    width: 35%;
+    width: 31%;
     margin-bottom: 0px;
-    margin-top: 12px;
+    margin-top: 17px;
   }
 
   .lomba-item, .pengumuman-item {
@@ -680,7 +692,7 @@ footer .credit {
   .timer-box, .timer-box1 {
     width: 60px;
     height: 60px;
-    font-size: 30px;
+    font-size: 15px;
   }
 
   .timer-box span {
@@ -714,5 +726,13 @@ footer .credit {
 
   .timeline-container.right::after {
     left: 45%;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  .timer-box span {
+    font-size: 12px;
   }
 }

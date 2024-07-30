@@ -675,4 +675,11 @@ h1 {
   .dashboard.active {
     left: 0;
   }
+
+  .header_form h1 {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 45px;
+  }
+  
 }
