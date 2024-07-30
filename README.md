@@ -2,6 +2,7 @@ TODO
 
 --Frontend--
 * Navbar belum maksimal
+* Logo pada dashboard belum diganti
 
 --Backend--
 * Fix redirect
@@ -61,3 +62,4 @@ CHANGELOG 30/7/2024
 - Page status karya menyesuaikan data pada database
 - Tambah kode php untuk handle submisi lomba
 - Tambah fitur sidebar pada max-width 480px
+- Ubah link "Akronim" jadi "SINOPAL" pada dashboard peserta dan admin

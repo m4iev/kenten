@@ -24,7 +24,7 @@
                         <span class="icon">
                             <ion-icon name="accessibility-outline"></ion-icon>
                         </span>
-                        <span class="title">Akronim</span>
+                        <span class="title">SINOPAL</span>
                     </a>
                 </li>
 
