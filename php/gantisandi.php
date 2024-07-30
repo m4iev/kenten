@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 
   if ($error == "") {
-    $db = new mysqli("1ld.h.filess.io", "komikbang_nearertown", "2ee4b70d5fa690b6a847c0d57cad5577cc4403bc", "komikbang_nearertown");
+    $db = new mysqli("localhost", "admin", "inovasipalembang2024", "sinopal");
 
     $sql = "SELECT password FROM akun WHERE email = '$email'";
     $result = $db->query($sql);

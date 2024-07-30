@@ -2,7 +2,7 @@
 
     session_start();
 
-    $conn = new mysqli("1ld.h.filess.io", "komikbang_nearertown", "2ee4b70d5fa690b6a847c0d57cad5577cc4403bc", "komikbang_nearertown");
+    $conn = new mysqli("localhost", "admin", "inovasipalembang2024", "sinopal");
 
     if ($conn->connect_error) {
         die("Koneksi gagal: " . $conn->connect_error);
