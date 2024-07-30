@@ -1,6 +1,6 @@
 <?php
 
-$db = new mysqli("1ld.h.filess.io:3305", "komikbang_nearertown", "2ee4b70d5fa690b6a847c0d57cad5577cc4403bc", "komikbang_nearertown");
+$db = new mysqli("1ld.h.filess.io", "komikbang_nearertown", "2ee4b70d5fa690b6a847c0d57cad5577cc4403bc", "komikbang_nearertown", "3305");
 
 if ($db->connect_error) {
     die('Connection failed: ' . $db->connect_error);
