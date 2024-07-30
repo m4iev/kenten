@@ -1,6 +1,6 @@
 <?php
 
-$db = new mysqli('localhost', 'admin', 'inovasipalembang2024', 'akronim');
+$db = new mysqli("1ld.h.filess.io", "komikbang_nearertown", "2ee4b70d5fa690b6a847c0d57cad5577cc4403bc", "komikbang_nearertown");
 
 if ($db->connect_error) {
     die('Connection failed: ' . $db->connect_error);
