@@ -125,6 +125,19 @@ document.addEventListener('DOMContentLoaded', function () {
   checkPosition(); // Initial check
 });
 
+let navbarResponsive = $(".wadah-navbar");
+let headerMain = $(".header");
+let menuButton = $("#menu-button");
+let closeButton = $("#menu-button-close");
+navbarResponsive.hide();
+
+function toggleNavbar() {
+  navbarResponsive.fadeToggle(400, "linear");
+  headerMain.toggleClass("aktif");
+  menuButton.toggle();
+  closeButton.toggle();
+}
+
 countdownTimer();
 setActiveLink();
 animateTimelineItems();

@@ -33,6 +33,22 @@ body {
   z-index: 99999;
   border-radius: 0px 0px 50px 50px;
   width: 100%;
+}
+
+.header.aktif {
+  border: 2px solid black;
+}
+
+.header-navbar {
+  background-image: linear-gradient(to right, #ffffff, #C5982D, maroon);
+  background-size: contain;
+  padding: 100px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  border-radius: 0px 0px 50px 50px;
+  width: 100%;
   border: 2px solid black;
 }
 
@@ -48,6 +64,7 @@ body {
   border-radius: 50px;
   gap: 20px;
 }
+
 
 .nav-link, .login {
   text-decoration: none;
@@ -540,6 +557,13 @@ footer .credit {
   display: none;
 }
 
+#menu-button-close {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+
 
 /* MEDIA QUARIES */
 @media (max-width: 1024px) {
@@ -663,7 +687,7 @@ footer .credit {
   }
   
   .login {
-    display: none;
+    display: block;
   }
 
   .navbar {
@@ -717,7 +741,7 @@ footer .credit {
 
   .timeline-container {
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
   }
   
   .timeline-container.right {
@@ -742,5 +766,13 @@ footer .credit {
 
   .timer-box span {
     font-size: 12px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .login.desktop {
+    display: none;
   }
 }
