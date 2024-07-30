@@ -59,3 +59,8 @@ CHANGELOG 28/7/2024
 
 CHANGELOG 29/7/2024
 - Tambah media queries untuk smartphone dan tablet pada dashboard peserta dan dashboard admin.
+
+CHANGELOG 30/7/2024
+- Tambah asset Status karya
+- Page status karya menyesuaikan data pada database
+- Tambah kode php untuk handle submisi lomba
