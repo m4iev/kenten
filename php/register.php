@@ -22,9 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bind_param('ssss', $email, $hashedPassword, $nama, $tipeAkun);
 
         if ($stmt->execute()) {
-            echo "<p>Akun berhasil dibuat!</p>";
+            header("Location: ../documents/register.html");
         } else {
-            echo "<p>Error: " . $db->error . "</p>";
+            header("Location: ../documents/register.html");
         }
     
         $stmt->close();

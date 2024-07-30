@@ -33,13 +33,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 header('Location: ../documents/dashboard_admin/dashboard_admin.php');
                 exit;
             } else {
-                echo "<p>Ada masalah dengan akun.</p>";
+                header('Location: ../documents/login.html');
+                echo "<script>alert('Ada masalah dengan akun. Silahkan hubungi admin.');</script>";
+                exit;
             }
         } else {
-            echo "<p>Password salah!</p>";
+            header('Location: ../documents/login.html');
+            echo "<script>alert('Password Salah.');</script>";
+            exit;
         }
     } else {
-        echo "<p>Akun tidak ditemukan!</p>";
+        header('Location: ../documents/login.html');
+        echo "<script>alert('Akun tidak ditemukan.');</script>";
     }
 
     $stmt->close();

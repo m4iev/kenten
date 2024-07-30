@@ -25,9 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql_update_data = "UPDATE peserta_animasi SET judul_animasi=\"$judul\", storyboard=\"$storyboard\", script=\"$script\", hasil_render=\"$hasil_render\", deskripsi=\"$deskripsi\", status_peserta=\"sudah mengumpul\" WHERE nama_tim=\"$nama_tim\"";
 
     if ($conn->query($sql_update_data) === TRUE) {
-        echo "Data berhasil disimpan";
+        header("Location: ../documents/dashboard_peserta/peserta_kegiatanlomba.php");
     } else {
-        echo "Error";
+        header("Location: ../documents/dashboard_peserta/peserta_kegiatanlomba.php");
     }
 }
 ?>

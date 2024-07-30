@@ -24,9 +24,10 @@ $sql_peserta = "INSERT INTO peserta_$lomba_diikuti (nama_tim, status_peserta)
 
 // Eksekusi query
 if ($conn->query($sql) === TRUE && $conn->query($sql_peserta) === TRUE) {
-    echo "Data berhasil disimpan";
+    header("Location: ../documents/dashboard_peserta/peserta_datatim.php");
+    exit;
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    header("Location: ../documents/dashboard_peserta/peserta_datatim.php", true);
 }
 
 $conn->close();

@@ -25,9 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql_update_data = "UPDATE peserta_website SET judul_website=\"$judul\", wireframe=\"$wireframe\", uiux=\"$uiux\", project_file=\"$project_file\", deskripsi=\"$deskripsi\", status_peserta=\"sudah mengumpul\" WHERE nama_tim=\"$nama_tim\"";
 
     if ($conn->query($sql_update_data) === TRUE) {
-        echo "Data berhasil disimpan";
+        header("Location: ../documents/dashboard_peserta/peserta_kegiatanlomba.php");
     } else {
-        echo "Error";
+        header("Location: ../documents/dashboard_peserta/peserta_kegiatanlomba.php");
     }
 }
 ?>
