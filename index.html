@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="wadah-header">
-        <header class="header">
+        <header class="header aktif">
             <div class="logo-container">
                 <img src="assets/logotim.png" alt="Logo" class="logo">
             </div>
@@ -20,8 +20,16 @@
                 <a href="#lomba" class="nav-link">Lomba</a>
                 <a href="#pengumuman" class="nav-link">Pengumuman</a>
             </nav>
+            <a href="documents/login.html" class="login desktop">Login</a>
+            <a href="#" id="menu-button" onclick="toggleNavbar(); return false;"><i class="ri-menu-line"></i></a>
+            <a href="#" id="menu-button-close" onclick="toggleNavbar(); return false;"><i class="ri-close-large-line"></i></a>
+            
+        </header>
+    </div>
+
+    <div class="wadah-navbar">
+        <header class="header-navbar">
             <a href="documents/login.html" class="login">Login</a>
-            <a href="#" id="menu-button"><i class="ri-menu-line"></i></a>
         </header>
     </div>
     
@@ -170,6 +178,7 @@
 
     </footer>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/scripthome.js"></script>
 </body>
 </html>

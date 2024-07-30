@@ -1,14 +1,10 @@
 TODO
 
 --Frontend--
-* Navbar hp
-* card lomba ?
+* Navbar belum maksimal
 
 --Backend--
-* fix redirect
-
---MISC--
-
+* Fix redirect
 
 CHANGELOG 20/7/2024
 - Tambah dashboard admin
@@ -59,3 +55,9 @@ CHANGELOG 28/7/2024
 
 CHANGELOG 29/7/2024
 - Tambah media queries untuk smartphone dan tablet pada dashboard peserta dan dashboard admin.
+
+CHANGELOG 30/7/2024
+- Tambah asset status karya
+- Page status karya menyesuaikan data pada database
+- Tambah kode php untuk handle submisi lomba
+- Tambah fitur sidebar pada max-width 480px
