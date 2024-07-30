@@ -19,7 +19,6 @@ if ($result->num_rows > 0) {
     echo "<th>Hasil Render</th>";
     echo "<th>Deskripsi</th>";
     echo "<th>Status Peserta</th>";
-    echo "<th></th>";
     echo "</tr>";
 
     while ($row = $result->fetch_assoc()) {
@@ -29,7 +28,7 @@ if ($result->num_rows > 0) {
 
         $hyperlink_storyboard = is_null($row['storyboard']) ? "Belum ada" : "<a href='$storyboard'>Link</a>";
         $hyperlink_script = is_null($row['script']) ? "Belum ada" : "<a href='$script'>Link</a>";
-        $hyperlink_hasil_render = is_null($row['source_code']) ? "Belum ada" : "<a href='$hasil_render'>Link</a>";
+        $hyperlink_hasil_render = is_null($row['hasil_render']) ? "Belum ada" : "<a href='$hasil_render'>Link</a>";
 
         echo "<tr>";
         echo "<td>" . ucwords($row['nama_tim']) . "</td>"; 
@@ -52,7 +51,6 @@ if ($result->num_rows > 0) {
     echo "<th>Hasil Render</th>";
     echo "<th>Deskripsi</th>";
     echo "<th>Status Peserta</th>";
-    echo "<th></th>";
     echo "</tr>";
     echo "</table>";
 }

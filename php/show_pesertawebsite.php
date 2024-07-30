@@ -6,7 +6,7 @@ if ($db->connect_error) {
     die('Connection failed: ' . $db->connect_error);
 }
 
-$sql = "SELECT * FROM peserta_animasi";
+$sql = "SELECT * FROM peserta_website";
 $result = $db->query($sql);
 
 if ($result->num_rows > 0) {
@@ -19,7 +19,6 @@ if ($result->num_rows > 0) {
     echo "<th>File Project</th>";
     echo "<th>Deskripsi</th>";
     echo "<th>Status Peserta</th>";
-    echo "<th></th>";
     echo "</tr>";
 
     while ($row = $result->fetch_assoc()) {
@@ -52,7 +51,6 @@ if ($result->num_rows > 0) {
     echo "<th>File Project</th>";
     echo "<th>Deskripsi</th>";
     echo "<th>Status Peserta</th>";
-    echo "<th></th>";
     echo "</tr>";
     echo "</table>";
 }

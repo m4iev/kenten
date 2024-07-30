@@ -14,7 +14,7 @@ if ($result->num_rows > 0) {
     echo "<tr>";
     echo "<th>Nama Tim</th>";
     echo "<th>Nama Ketua</th>";
-    echo "<th>Nik Ketua</th>";
+    echo "<th>NIK Ketua</th>";
     echo "<th>No. Telp</th>";
     echo "<th>Lomba yang diikuti</th>";
     echo "</tr>";

@@ -1,9 +1,8 @@
 TODO
 
 --Frontend--
-* Fix toggle navbar
-* masukkin asset2
-* MEDIA QUERIES HOMEPAGE
+* Navbar hp
+* card lomba ?
 
 --Backend--
 * fix redirect

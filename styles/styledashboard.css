@@ -279,13 +279,14 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
 form label {
   display: block;
   font-size: 14px;
   margin: 30px auto 5px;
-  text-align: left;
+  text-align: center;
 }
 
 form input[type="text"],
@@ -313,6 +314,7 @@ form button {
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+  /* text-align: center; */
 }
 
 form button:hover {
@@ -321,7 +323,7 @@ form button:hover {
 
 /* Card Home Dashboard */
 .card-container {
-  width: 1142px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -474,10 +476,10 @@ h1 {
   max-width: 300px;
 }
 
-/* Style Tambah Lomba*/
 .form-group input[type="date"] {
   margin-right: 140px;
   margin-left: 140px;
+  
 }
 
 .tambah-link {
@@ -599,6 +601,7 @@ h1 {
   form input[type="email"],
   form input[type="tel"],
   form input[type="password"],
+  form input[type="date"],
   form textarea {
     width: 100%;
   }
@@ -664,6 +667,7 @@ h1 {
   form input[type="email"],
   form input[type="tel"],
   form input[type="password"],
+  form input[type="date"],
   form textarea {
     width: 100%;
   }
@@ -676,10 +680,9 @@ h1 {
     left: 0;
   }
 
-  .header_form h1 {
-    font-size: 20px;
-    margin: 0;
-    margin-top: 45px;
+  form button {
+    width: 100%;
   }
-  
 }
+
+

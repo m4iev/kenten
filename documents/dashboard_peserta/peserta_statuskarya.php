@@ -79,17 +79,7 @@
                 </div>
             </div>
 
-            <div class="status-karya">
-                <a href="./dashboard_peserta.php" class="back-link"></ion-icon>Kembali</a>
-                <h1>Kirim Karya Mu Sekarang Juga!</h1>
-                <div class="upload-icon">
-                    <img src="cloud-upload-icon.png">
-                </div>
-                <p class="description">
-                Karya Tim Anda akan dinilai dengan assessor yang mempunyai pengalaman dibidangnya.
-                Penilaian ini tidak mendiskriminasi ras dan agama atau mementingkan golongan tertentu!
-                </p>
-            </div>
+            <?php include '../../php/show_statuskarya.php' ?>
         </div>
     </div>
 

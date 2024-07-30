@@ -65,7 +65,7 @@
         <!-- Dashboard -->
         <div class="dashboard active">
             <div class="topbar">
-                <div class="toggle">
+                <div class="toggle home-toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
             </div>

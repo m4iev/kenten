@@ -589,6 +589,14 @@ footer .credit {
   .pengumuman-item {
     width: 30%;
   }
+
+  .video-placeholder {
+    display: none;
+  }
+
+  .video-placeholder-s {
+    display: block;
+  }
 }
 
 /* Media Query untuk perangkat iPad (max 768px) */

@@ -19,7 +19,6 @@ if ($result->num_rows > 0) {
     echo "<th>Source Code</th>";
     echo "<th>Deskripsi</th>";
     echo "<th>Status Peserta</th>";
-    echo "<th></th>";
     echo "</tr>";
 
     while ($row = $result->fetch_assoc()) {
@@ -52,7 +51,6 @@ if ($result->num_rows > 0) {
     echo "<th>Source Code</th>";
     echo "<th>Deskripsi</th>";
     echo "<th>Status Peserta</th>";
-    echo "<th></th>";
     echo "</tr>";
     echo "</table>";
 }

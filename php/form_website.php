@@ -1,6 +1,6 @@
 <?php
     echo "<div class='content-website'>";
-    echo "  <form action='submit.php' method='post' enctype='multipart/form-data'>";
+    echo "  <form action='../../php/submit_website.php' method='post' enctype='multipart/form-data'>";
     echo "      <label for='judul'>Judul/Nama Karya</label>";
     echo "      <input type='text' id='judul' name='judul' placeholder='Judul/Nama Karya' required>";     
     echo "      <label for='wireframe'>Wireframe (link)</label>";
