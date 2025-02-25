@@ -63,3 +63,7 @@ CHANGELOG 30/7/2024
 - Tambah kode php untuk handle submisi lomba
 - Tambah fitur sidebar pada max-width 480px
 - Ubah link "Akronim" jadi "SINOPAL" pada dashboard peserta dan admin
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+25/2/2025 -> UBAH STRUKTUR FOLDER PROJECT DAN UPDATE LOGIKA PHP MENJADI LEBIH RAPI DAN SECURE.
+//////////////////////////////////////////////////////////////////////////////////////////////
