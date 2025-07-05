@@ -27,3 +27,55 @@ Kenten dilengkapi dengan berbagai fitur untuk membuat manajemen kompetisi menjad
 - Backend: PHP
 - Frontend: HTML, CSS, JavaScript
 - Database: MySQL
+
+## Screenshots
+
+### Tampilan Utama
+![Hero Landing Page](/Screenshots%20Kenten/Index/Home.png)
+*Hero Landing Page*
+
+![Kata Sambutan](/Screenshots%20Kenten/Index/Sambutan.png)
+*Kata Sambutan*
+
+![Timeline](/Screenshots%20Kenten/Index/Timeline.png)
+*Timeline Lomba*
+
+![Daftar Lomba](/Screenshots%20Kenten/Index/Lomba.png)
+*Daftar Lomba*
+
+![Pengumuman](/Screenshots%20Kenten/Index/Pengumuman.png)
+*Pengumuman Lomba*
+
+![Login Page](/Screenshots%20Kenten/Index/Login.png)
+*Login Page*
+
+![Register Page](/Screenshots%20Kenten/Index/Register.png)
+*Register Page*
+
+### Tampilan Dashboard User
+![Home Dashboard User](/Screenshots%20Kenten/User/Home.png)
+*Home Dashboard User*
+
+![Data Tim](/Screenshots%20Kenten/User/Isi_DataTim.png)
+*Data Tim*
+
+![Home Dashboard User](/Screenshots%20Kenten/User/Home.png)
+*Home Dashboard User*
+
+![Submisi Lomba](/Screenshots%20Kenten/User/Form_KegiatanLomba%20(2).png)
+*Submisi Lomba*
+
+![Cek Progress Lomba](/Screenshots%20Kenten/User/UploadLomba_Mengisi.png)
+*Cek Progress Lomba*
+
+### Tampilan Dashboard Admin
+
+![Daftar Tim](/Screenshots%20Kenten/Admin/DaftarTim.png)
+*Daftar Tim*
+
+![Daftar Lomba](/Screenshots%20Kenten/Admin/DaftarKegiatanLomba.png)
+*Daftar Lomba*
+
+![Tambah Lomba](/Screenshots%20Kenten/Admin/FormTambah_KegiatanLomba.png)
+*Tambah Lomba*
+
